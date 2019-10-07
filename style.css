@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Times New Roman", "IPA P明朝", "YuMincho", "Yu Mincho", serif;
+  font-size: 16px;
+}
+
+article {
+  width: 700px;
+  margin: 0px auto;
+  padding: 0px;
+}
+
+article h1 {
+  margin: 40px 0px 15px 0px;
+  padding: 0px;
+  font-weight: normal;
+  font-size: 22px;
+}
+
+article p {
+  margin: 5px 0px;
+  padding: 0px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+article a {
+  color: hsl(200, 80%, 50%);
+  text-decoration: underline;
+}
+
+article span.display-math {
+  margin: 8px 0px;
+  text-align: center;
+  line-height: 1;
+  display: block;
+}
+
+article p math-root {
+  color: hsl(240, 80%, 50%);
+}
+
+article p.normal math-root {
+  color: black;
+}
+
+article p math-root span.box {
+  width: 1em;
+  display: inline-block;
+  vertical-align: middle; 
+  background-color: hsl(240, 80%, 80%);
+}
+
+article p math-root span.box::before {
+  line-height: 1;
+  content: "?";
+}
