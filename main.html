@@ -3,592 +3,16 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8">
-    <style>math-n{padding:0em 0em;line-height:1}math-i{padding:0em 0em;line-height:1;font-style:italic}math-i.fun{padding:0em .1666666667em 0em 0em;font-style:normal}math-i.alt{font-family:"Math";font-style:normal}math-o{padding:0em .2222222222em;line-height:0.7;font-family:"Math"}math-o.bin{padding:0em .2222222222em}math-o.rel{padding:0em .2777777778em}math-o.del{padding:0em .2777777778em 0em 0em}math-o.ord{padding:0em 0em}math-o.acc{padding:0em 0em;height:0.2em;line-height:0.9;vertical-align:-0.3em}math-o.int{padding:0em 0em;height:2.3em;line-height:2.3em}math-o.sum{padding:0.1em 0em;line-height:1.4em}math-o.txt{font-family:inherit}math-o.lp{padding:0em 0em 0em .0555555556em}math-i.fun+math-o.lp{padding:0em 0em 0em .0555555556em;margin-left:-.1666666667em}math-o.rp{padding:0em .0555555556em 0em 0em}math-sub math-o,math-sup math-o,math-under math-o,math-over math-o{padding-left:0em !important;padding-right:0em !important}*>math-o:first-child{padding-left:0em;padding-right:0em}math-frac{padding:0em .1111111111em !important;vertical-align:0.15em}math-frac>math-num{margin:0em 0em -0.1em 0em;text-align:center;display:block}math-frac>math-denwrap{margin:0em 0em;width:100%;display:inline-table}math-frac>math-denwrap>math-line{margin:0em -.1111111111em;padding:0em .1111111111em !important;width:100%;height:1px;border-top:1px solid;box-sizing:content-box}math-frac>math-denwrap>math-den{margin:0em 0em;text-align:center;display:block}math-sqrt>math-surd{margin:0.31em 0em 0em 0em;vertical-align:top;font-size:90%}math-sqrt>math-surd.s1{margin:0.97em 0em 0em 0em}math-sqrt>math-surd.s2{margin:1.5em 0em 0em 0em}math-sqrt>math-surd.s3{margin:2.01em 0em 0em 0em}math-sqrt>math-surd>math-o,math-sqrt>math-surd>math-o.var{padding:0em 0em}math-sqrt>math-sqrtcont{padding:0.1em .0555555556em 0em 0em;border-top:1px solid}math-subsup>math-base{margin:0em 0em}math-subsup>math-sub{padding:0em 0em;vertical-align:-0.36em;font-size:80%}math-subsup>math-sup{padding:0em 0em;vertical-align:0.51em;font-size:80%}math-subsup.int{margin:0em 0em}math-subsup.sub{margin-bottom:-0.05em}math-subsup.sup{margin-top:-0.05em}math-underover>math-over{margin:0em 0em;font-size:80%;text-align:center;display:block}math-underover.acc>math-over{font-size:100%}math-underover>math-basewrap{margin:0em 0em;width:100%;display:inline-table}math-underover>math-basewrap>math-base{margin:0em 0em;text-align:center;display:block}math-underover>math-basewrap>math-under{margin:0em 0em;font-size:80%;text-align:center;display:block}math-underover.acc>math-basewrap>math-under{font-size:100%}math-underover.under{margin-bottom:-0.05em}math-underover.over{margin-top:-0.05em}math-vstretch>math-top,math-vstretch>math-bar>math-barcont,math-vstretch>math-mid,math-vstretch>math-bot{height:1.25em;line-height:2em;font-family:"Math";display:block}math-vstretch>math-mid{height:1.9em;line-height:3.4em}math-vstretch>math-bar{overflow:hidden}math-vstretch>math-bar>math-barcont{transform:scale(1, 100)}math-table{vertical-align:middle;display:inline-table}math-table>math-row{display:table-row}math-table>math-row>math-cell{padding-top:.3333333333em;padding-left:.8333333333em;text-align:center;display:table-cell}math-table>math-row:first-of-type>math-cell{padding-top:0em}math-table>math-row>math-cell:first-of-type{padding-left:0em}math-root{line-height:0;display:inline-block;box-sizing:border-box;white-space:nowrap}math-root *{display:inline-block;box-sizing:border-box}math-root *>*:first-child{padding-left:0em}math-root *>*:last-child{padding-right:0em}math-root .l0{padding-left:0em}math-root .l1{padding-left:.0555555556em}math-root .l2{padding-left:.1111111111em}math-root .l3{padding-left:.1666666667em}math-root .l4{padding-left:.2222222222em}math-root .l5{padding-left:.2777777778em}math-root .l6{padding-left:.3333333333em}math-root .l7{padding-left:.3888888889em}math-root .l8{padding-left:.4444444444em}math-root .l9{padding-left:.5em}math-root .l10{padding-left:.5555555556em}math-root .l11{padding-left:.6111111111em}math-root .l12{padding-left:.6666666667em}math-root .l13{padding-left:.7222222222em}math-root .l14{padding-left:.7777777778em}math-root .l15{padding-left:.8333333333em}math-root .l16{padding-left:.8888888889em}math-root .l17{padding-left:.9444444444em}math-root .l18{padding-left:1em}math-root .r0{padding-right:0em}math-root .r1{padding-right:.0555555556em}math-root .r2{padding-right:.1111111111em}math-root .r3{padding-right:.1666666667em}math-root .r4{padding-right:.2222222222em}math-root .r5{padding-right:.2777777778em}math-root .r6{padding-right:.3333333333em}math-root .r7{padding-right:.3888888889em}math-root .r8{padding-right:.4444444444em}math-root .r9{padding-right:.5em}math-root .r10{padding-right:.5555555556em}math-root .r11{padding-right:.6111111111em}math-root .r12{padding-right:.6666666667em}math-root .r13{padding-right:.7222222222em}math-root .r14{padding-right:.7777777778em}math-root .r15{padding-right:.8333333333em}math-root .r16{padding-right:.8888888889em}math-root .r17{padding-right:.9444444444em}math-root .r18{padding-right:1em}@font-face{font-family:"Math";src:url("font.otf")}
-</style><script>DATA={
-  "leaf": [
-    "n", "i", "op", "o",
-    "text",
-    "bb", "scr", "frak"
-  ],
-  "replacement": {
-    "-": "−",
-    "*": "∗"
-  },
-  "paren": {
-    "paren": {
-      "0": ["(", ")"],
-      "1": ["\uDB80\uDC39", "\uDB80\uDC45"], "2": ["\uDB80\uDC3A", "\uDB80\uDC46"], "3": ["\uDB80\uDC3B", "\uDB80\uDC47"], "4": ["\uDB80\uDC3C", "\uDB80\uDC48"],
-      "5": ["\uDB80\uDC3D", "\uDB80\uDC49"], "6": ["\uDB80\uDC3E", "\uDB80\uDC4A"], "7": ["\uDB80\uDC3F", "\uDB80\uDC4B"], "8": ["\uDB80\uDC40", "\uDB80\uDC4C"],
-      "9": ["\uDB80\uDC41", "\uDB80\uDC4D"], "10": ["\uDB80\uDC42", "\uDB80\uDC4E"], "11": ["\uDB80\uDC43", "\uDB80\uDC4F"], "12": ["\uDB80\uDC44", "\uDB80\uDC50"],
-      "top": ["⎛", "⎞"], "bar": ["⎜", "⎟"], "bot": ["⎝", "⎠"] 
-    },
-    "pparen": {
-      "0": ["⦅", "⦆"],
-      "1": ["\uDB80\uDE0A", "\uDB80\uDE0E"], "2": ["\uDB80\uDE0B", "\uDB80\uDE0F"], "3": ["\uDB80\uDE0C", "\uDB80\uDE10"], "4": ["\uDB80\uDE0D", "\uDB80\uDE11"]
-    },
-    "bracket": {
-      "0": ["[", "]"],
-      "1": ["\uDB80\uDC51", "\uDB80\uDC5D"], "2": ["\uDB80\uDC52", "\uDB80\uDC5E"], "3": ["\uDB80\uDC53", "\uDB80\uDC5F"], "4": ["\uDB80\uDC54", "\uDB80\uDC60"],
-      "5": ["\uDB80\uDC55", "\uDB80\uDC61"], "6": ["\uDB80\uDC56", "\uDB80\uDC62"], "7": ["\uDB80\uDC57", "\uDB80\uDC63"], "8": ["\uDB80\uDC58", "\uDB80\uDC64"],
-      "9": ["\uDB80\uDC59", "\uDB80\uDC65"], "10": ["\uDB80\uDC5A", "\uDB80\uDC66"], "11": ["\uDB80\uDC5B", "\uDB80\uDC67"], "12": ["\uDB80\uDC5C", "\uDB80\uDC68"],
-      "top": ["⎡", "⎤"], "bar": ["⎢", "⎥"], "bot": ["⎣", "⎦"]
-    },
-    "bbracket": {
-      "0": ["⟦", "⟧"],
-      "1": ["\uDB80\uDDE8", "\uDB80\uDDEC"], "2": ["\uDB80\uDDE9", "\uDB80\uDDED"], "3": ["\uDB80\uDDEA", "\uDB80\uDDEE"], "4": ["\uDB80\uDDEB", "\uDB80\uDDEF"]
-    },
-    "brace": {
-      "0": ["{", "}"],
-      "1": ["\uDB80\uDC69", "\uDB80\uDC75"], "2": ["\uDB80\uDC6A", "\uDB80\uDC76"], "3": ["\uDB80\uDC6B", "\uDB80\uDC77"], "4": ["\uDB80\uDC6C", "\uDB80\uDC78"],
-      "5": ["\uDB80\uDC6D", "\uDB80\uDC79"], "6": ["\uDB80\uDC6E", "\uDB80\uDC7A"], "7": ["\uDB80\uDC6F", "\uDB80\uDC7B"], "8": ["\uDB80\uDC70", "\uDB80\uDC7C"],
-      "9": ["\uDB80\uDC71", "\uDB80\uDC7D"], "10": ["\uDB80\uDC72", "\uDB80\uDC7E"], "11": ["\uDB80\uDC73", "\uDB80\uDC7F"], "12": ["\uDB80\uDC74", "\uDB80\uDC80"],
-      "top": ["⎧", "⎫"], "bar": ["⎪", "⎪"], "mid": ["⎨", "⎬"], "bot": ["⎩", "⎭"]
-    },
-    "bbrace": {
-      "0": ["⦃", "⦄"],
-      "1": ["\uDB80\uDE02", "\uDB80\uDE06"], "2": ["\uDB80\uDE03", "\uDB80\uDE07"], "3": ["\uDB80\uDE04", "\uDB80\uDE08"], "4": ["\uDB80\uDE05", "\uDB80\uDE09"]
-    },
-    "vert": {
-      "0": ["|", "|"],
-      "bar": ["|", "|"]
-    },
-    "vvert": {
-      "0": ["‖", "‖"],
-      "bar": ["‖", "‖"]
-    },
-    "floor": {
-      "0": ["⌊", "⌋"],
-      "1": ["\uDB80\uDD99", "\uDB80\uDD9D"], "2": ["\uDB80\uDD9A", "\uDB80\uDD9E"], "3": ["\uDB80\uDD9B", "\uDB80\uDD9F"], "4": ["\uDB80\uDD9C", "\uDB80\uDDA0"]
-    },
-    "ceil": {
-      "0": ["⌈", "⌉"],
-      "1": ["\uDB80\uDD91", "\uDB80\uDD95"], "2": ["\uDB80\uDD92", "\uDB80\uDD96"], "3": ["\uDB80\uDD93", "\uDB80\uDD97"], "4": ["\uDB80\uDD94", "\uDB80\uDD98"]
-    },
-    "angle": {
-      "0": ["⟨", "⟩"],
-      "1": ["\uDB80\uDDF0", "\uDB80\uDDF4"], "2": ["\uDB80\uDDF1", "\uDB80\uDDF5"], "3": ["\uDB80\uDDF2", "\uDB80\uDDF6"], "4": ["\uDB80\uDDF3", "\uDB80\uDDF7"]
-    },
-    "aangle": {
-      "0": ["⟪", "⟫"],
-      "1": ["\uDB80\uDDF8", "\uDB80\uDDFC"], "2": ["\uDB80\uDDF9", "\uDB80\uDDFD"], "3": ["\uDB80\uDDFA", "\uDB80\uDDFE"], "4": ["\uDB80\uDDFB", "\uDB80\uDDFF"]
-    },
-    "tort": {
-      "0": ["❲", "❳"],
-      "1": ["\uDB80\uDDE0", "\uDB80\uDDE4"], "2": ["\uDB80\uDDE1", "\uDB80\uDDE5"], "3": ["\uDB80\uDDE2", "\uDB80\uDDE6"], "4": ["\uDB80\uDDE3", "\uDB80\uDDE7"]
-    }
-  },
-  "integral": {
-    "int": ["∫", "\uDB80\uDD35"],
-    "iint": ["∬", "\uDB80\uDD3A"],
-    "iiint": ["∭", "\uDB80\uDD3F"],
-    "iiiint": ["⨌", "\uDB80\uDE24"],
-    "oint": ["∮", "\uDB80\uDD44"],
-    "oiint": ["∯", "\uDB80\uDD49"],
-    "oiiint": ["∰", "\uDB80\uDD4E"],
-    "intclock": ["∱", "\uDB80\uDD53"],
-    "intanticlock": ["⨑", "\uDB80\uDE3D"],
-    "ointclock": ["∲", "\uDB80\uDD58"],
-    "ointanticlock": ["∳", "\uDB80\uDD5D"],
-    "fint": ["⨍", "\uDB80\uDE29"]
-  },
-  "sum": {
-    "sum": ["∑", "\uDB80\uDD1A"],
-    "prod": ["∏", "\uDB80\uDD16"],
-    "coprod": ["∐", "\uDB80\uDD18"],
-    "bigoplus": ["⨁", "\uDB80\uDE15"],
-    "bigotimes": ["⨂", "\uDB80\uDE16"],
-    "bigodot": ["⨀", "\uDB80\uDE14"],
-    "bigcap": ["⋂", "\uDB80\uDD89"],
-    "bigcup": ["⋃", "\uDB80\uDD8A"],
-    "bigsqcap": ["⨅", "\uDB80\uDE19"],
-    "bigsqcup": ["⨆", "\uDB80\uDE1A"],
-    "bigwedge": ["⋀", "\uDB80\uDD87"],
-    "bigvee": ["⋁", "\uDB80\uDD88"]
-  },
-  "radical": {
-    "0": "√", "1": "\uDB80\uDD1D", "2": "\uDB80\uDD1E", "3": "\uDB80\uDD1F"
-  },
-  "accent": {
-    "bar": ["ˉ", "over"],
-    "tilde": ["˜", "over"],
-    "hat": ["ˆ", "over"],
-    "check": ["ˇ", "over"],
-    "acute": ["ˊ", "over"],
-    "grave": ["ˋ", "over"],
-    "breve": ["˘", "over"],
-    "ring": ["˚", "over"],
-    "dot": ["˙", "over"],
-    "barbelow": ["ˉ", "under"],
-    "tildebelow": ["˜", "under"],
-    "hatbelow": ["ˆ", "under"],
-    "checkbelow": ["ˇ", "under"],
-    "acutebelow": ["ˊ", "under"],
-    "gravebelow": ["ˋ", "under"],
-    "brevebelow": ["˘", "under"],
-    "ringbelow": ["˚", "under"],
-    "dotbelow": ["˙", "under"]
-  },
-  "wide": {
-    "widetilde": {
-      "0": "\uDB80\uDCA1", "1": "\uDB80\uDCA2", "2": "\uDB80\uDCA3", "3": "\uDB80\uDCA4", "4": "\uDB80\uDCA5"
-    },
-    "widehat": {
-      "0": "\uDB80\uDC97", "1": "\uDB80\uDC98", "2": "\uDB80\uDC99", "3": "\uDB80\uDC9A", "4": "\uDB80\uDC9B"
-    },
-    "widecheck": {
-      "0": "\uDB80\uDC9C", "1": "\uDB80\uDC9D", "2": "\uDB80\uDC9E", "3": "\uDB80\uDC9F", "4": "\uDB80\uDCA0"
-    }
-  },
-  "function": [
-    "sin", "cos", "tan", "cot", "sec", "csc", "sinh", "cosh", "tanh",
-    "log", "ln", "lg", "exp",
-    "inf", "sup", "min", "max",
-    "ker", "im",
-    "lim", "colim",
-    "deg", "dim", "det", "sgn", "arg"
-  ],
-  "identifier": {
-    "varbeta": "ϐ",
-    "varepsilon": "ϵ",
-    "vartheta": "ϑ",
-    "varkappa": "ϰ",
-    "varpi": "ϖ",
-    "varrho": "ϱ",
-    "varphi": "ϕ",
-    "varcapupsilon": "ϒ",
-    "digamma": "ϝ", "capdigamma": "Ϝ",
-    "koppa": "ϙ", "capkoppa": "Ϙ",
-    "varkoppa": "ϟ", "varcapkoppa": "Ϟ",
-    "sampi": "ϡ", "capsampi": "Ϡ",
-    "varsampi": "ͳ", "varcapsampi": "Ͳ"
-  },
-  "operator": {
-    "plus": ["+", ["bin"]], 
-    "minus": ["−", ["bin"]],
-    "setminus": ["∖", ["bin"]],
-    "pm": ["±", ["bin"]],
-    "mp": ["∓", ["bin"]],
-    "times": ["×", ["bin"]],
-    "ltimes": ["⋉", ["bin"]],
-    "rtimes": ["⋊", ["bin"]],
-    "bowtie": ["⋈", ["bin"]],
-    "lthree": ["⋋", ["bin"]],
-    "rthree": ["⋌", ["bin"]],
-    "smashp": ["⨳", ["bin"]],
-    "div": ["÷", ["bin"]],
-    "cdot": ["·", ["bin"]],
-    "ast": ["∗", ["bin"]],
-    "star": ["⋆", ["bin"]],
-    "wr": ["≀", ["bin"]],
-    "circ": ["∘", ["bin"]],
-    "oplus": ["⊕", ["bin"]],
-    "ominus": ["⊖", ["bin"]],
-    "otimes": ["⊗", ["bin"]],
-    "odiv": ["⨸", ["bin"]],
-    "oslash": ["⊘", ["bin"]],
-    "odot": ["⊙", ["bin"]],
-    "boxplus": ["⊞", ["bin"]],
-    "boxminus": ["⊟", ["bin"]],
-    "boxtimes": ["⊠", ["bin"]],
-    "boxdot": ["⊡", ["bin"]],
-    "cap": ["∩", ["bin"]],
-    "cup": ["∪", ["bin"]],
-    "ccap": ["⋒", ["bin"]],
-    "ccup": ["⋓", ["bin"]],
-    "sqcap": ["⊓", ["bin"]],
-    "sqcup": ["⊔", ["bin"]],
-    "ssqcap": ["⩎", ["bin"]],
-    "ssqcup": ["⩏", ["bin"]],
-    "wedge": ["∧", ["bin"]],
-    "vee": ["∨", ["bin"]],
-    "barwedge": ["⊼", ["bin"]],
-    "barvee": ["⊽", ["bin"]],
-    "veebar": ["⊻", ["bin"]],
-    "wwedge": ["⩓", ["bin"]],
-    "vvee": ["⩔", ["bin"]],
-    "wedgewedge": ["⩕", ["bin"]],
-    "veevee": ["⩖", ["bin"]],
-    "pitchfork": ["⋔", ["bin"]],
-    "eq": ["=", ["rel"]], "neq": ["≠", ["rel"]],
-    "asiansim": ["≒", ["rel"]],
-    "varasiansim": ["≓", ["rel"]],
-    "coloneqq": [":=", ["rel"]],
-    "eqqcolon": ["=:", ["rel"]],
-    "equiv": ["≡", ["rel"]], "nequiv": ["≢", ["rel"]],
-    "sim": ["∼", ["rel"]], "nsim": ["≁", ["rel"]],
-    "simeq": ["≃", ["rel"]], "nsimeq": ["≄", ["rel"]],
-    "cong": ["≅", ["rel"]], "ncong": ["≇", ["rel"]],
-    "approx": ["≈", ["rel"]], "napprox": ["≉", ["rel"]],
-    "approxeq": ["≊", ["rel"]],
-    "gt": [">", ["rel"]], "ngt": ["≯", ["rel"]],
-    "ls": ["<", ["rel"]], "nls": ["≮", ["rel"]],
-    "geq": ["≥", ["rel"]], "ngeq": ["≱", ["rel"]], "gneq": ["⪈", ["rel"]], 
-    "leq": ["≤", ["rel"]], "nleq": ["≰", ["rel"]], "lneq": ["⪇", ["rel"]],
-    "eqg": ["⋝", ["rel"]],
-    "eql": ["⋜", ["rel"]],
-    "gl": ["≷", ["rel"]], "ngl": ["≹", ["rel"]],
-    "lg": ["≶", ["rel"]], "nlg": ["≸", ["rel"]],
-    "geql": ["⋛", ["rel"]],
-    "leqg": ["⋚", ["rel"]],
-    "ggt": ["≫", ["rel"]],
-    "lls": ["≪", ["rel"]],
-    "gggt": ["⋙", ["rel"]],
-    "llls": ["⋘", ["rel"]],
-    "in": ["∈", ["rel"]], "nin": ["∉", ["rel"]],
-    "ni": ["∋", ["rel"]], "nni": ["∌", ["rel"]],
-    "supset": ["⊃", ["rel"]], "nsupset": ["⊃⃒", ["rel"]],
-    "subset": ["⊂", ["rel"]], "nsubset": ["⊂⃒", ["rel"]],
-    "supseteq": ["⊇", ["rel"]], "nsupseteq": ["⊉", ["rel"]], "supsetneq": ["⊋", ["rel"]], 
-    "subseteq": ["⊆", ["rel"]], "nsubseteq": ["⊈", ["rel"]], "subsetneq": ["⊊", ["rel"]],
-    "sqsupset": ["⊐", ["rel"]], "nsqsupset": ["⊐̸", ["rel"]],
-    "sqsubset": ["⊏", ["rel"]], "nsqsubset": ["⊏̸", ["rel"]],
-    "sqsupseteq": ["⊒", ["rel"]], "nsqsupseteq": ["⋣", ["rel"]],
-    "sqsubseteq": ["⊑", ["rel"]], "nsqsubseteq": ["⋢", ["rel"]],
-    "rhd": ["⊳", ["rel"]], "nrhd": ["⋫", ["rel"]],
-    "lhd": ["⊲", ["rel"]], "nlhd": ["⋪", ["rel"]],
-    "rhdeq": ["⊵", ["rel"]], "nrhdeq": ["⋭", ["rel"]],
-    "lhdeq": ["⊴", ["rel"]], "nlhdeq": ["⋬", ["rel"]],
-    "vdash": ["⊦", ["rel"]], "nvdash": ["⊬", ["rel"]],
-    "vddash": ["⊧", ["rel"]], "nvddash": ["⊭", ["rel"]],
-    "vvdash": ["⊩", ["rel"]], "nvvdash": ["⊮", ["rel"]],
-    "mid": ["∣", ["rel"]], "nmid": ["∤", ["rel"]],
-    "parallel": ["∥", ["rel"]], "nparallel": ["∦", ["rel"]],
-    "propto": ["∝", ["rel"]],
-    "similarto": ["∽", ["rel"]],
-    "rarr": ["→", ["rel"]], "to": ["→", ["rel"]], 
-    "larr": ["←", ["rel"]], "from": ["←", ["rel"]],
-    "lrarr": ["↔", ["rel"]],
-    "rmap": ["↦", ["rel"]], "mapsto": ["↦", ["rel"]],
-    "lmap": ["↤", ["rel"]], "mappedfrom": ["↤", ["rel"]],
-    "rmulti": ["⊸", ["rel"]],
-    "lmulti": ["⟜", ["rel"]],
-    "lrmulti": ["⧟", ["rel"]],
-    "hookrarr": ["↪", ["rel"]],
-    "hooklarr": ["↩", ["rel"]],
-    "tailrarr": ["↣", ["rel"]],
-    "taillarr": ["↢", ["rel"]],
-    "headrarr": ["↠", ["rel"]],
-    "headlarr": ["↞", ["rel"]],
-    "uharprarr": ["⇀", ["rel"]],
-    "uharplarr": ["↼", ["rel"]],
-    "dharprarr": ["⇁", ["rel"]],
-    "dharplarr": ["↽", ["rel"]],
-    "curverarr": ["↷", ["rel"]],
-    "curvelarr": ["↶", ["rel"]],
-    "circlerarr": ["↻", ["rel"]],
-    "circlelarr": ["↺", ["rel"]],
-    "raarr": ["⇒", ["rel"]],
-    "laarr": ["⇐", ["rel"]],
-    "lraarr": ["⇔", ["rel"]],
-    "raaarr": ["⇛", ["rel"]],
-    "laaarr": ["⇚", ["rel"]],
-    "uarr": ["↑", ["rel"]],
-    "darr": ["↓", ["rel"]],
-    "udarr": ["↕", ["rel"]],
-    "uaarr": ["⇑", ["rel"]],
-    "daarr": ["⇓", ["rel"]],
-    "udaarr": ["⇕", ["rel"]],
-    "comma": [",", ["del", "txt"]],
-    "colon": [":", ["del", "txt"]],
-    "semicolon": [";", ["del", "txt"]],
-    "excl": ["!", ["ord", "txt"]],
-    "ques": ["?", ["ord", "txt"]],
-    "pr": ["\uDB80\uDF98", ["ord"]],
-    "ppr": ["\uDB80\uDF99", ["ord"]],
-    "pppr": ["\uDB80\uDF9A", ["ord"]],
-    "ppppr": ["\uDB80\uDF9B", ["ord"]],
-    "bpr": ["\uDB80\uDF9C", ["ord"]],
-    "bppr": ["\uDB80\uDF9D", ["ord"]],
-    "bpppr": ["\uDB80\uDF9E", ["ord"]],
-    "partial": ["∂", ["ord", "txt"]],
-    "nabla": ["∇", ["ord", "txt"]],
-    "infty": ["∞", ["ord", "txt"]],
-    "empty": ["∅", ["ord"]],
-    "wp": ["℘", ["ord"]],
-    "sharp": ["♯", ["ord"]],
-    "flat": ["♭", ["ord"]],
-    "natural": ["♮", ["ord"]],
-    "slash": ["/", ["ord"]],
-    "backslash": ["\\", ["ord"]],
-    "top": ["⊤", ["ord"]],
-    "bot": ["⊥", ["ord"]],
-    "neg": ["¬", ["ord"]],
-    "forall": ["∀", ["ord"]],
-    "exists": ["∃", ["ord"]], "nexists": ["∄", ["ord"]],
-    "aleph": ["ℵ", ["ord"]],
-    "beth": ["ℶ", ["ord"]],
-    "cdots": ["⋯", ["ord"]],
-    "vdots": ["⋮", ["ord"]],
-    "ddots": ["⋱", ["ord"]],
-    "udots": ["⋰", ["ord"]],
-    "lparen": ["(", ["lp"]], "rparen": [")", ["rp"]],
-    "lpparen": ["⦅", ["lp"]], "rpparen": ["⦆", ["rp"]],
-    "lbracket": ["[", ["lp"]], "rbracket": ["]", ["rp"]],
-    "lbbracket": ["⟦", ["lp"]], "rbbracket": ["⟧", ["rp"]],
-    "lbrace": ["{", ["lp"]], "rbrace": ["}", ["rp"]],
-    "lbbrace": ["⦃", ["lp"]], "rbbrace": ["⦄", ["rp"]],
-    "lvert": ["|", ["lp"]], "rvert": ["|", ["rp"]],
-    "lvvert": ["‖", ["lp"]], "rvvert": ["‖", ["rp"]],
-    "lfloor": ["⌊", ["lp"]], "rfloor": ["⌋", ["rp"]],
-    "lceil": ["⌈", ["lp"]], "rceil": ["⌉", ["rp"]],
-    "langle": ["⟨", ["lp"]], "rangle": ["⟩", ["rp"]],
-    "laangle": ["⟪", ["lp"]], "raangle": ["⟫", ["rp"]],
-    "ltort": ["❲", ["lp"]], "rtort": ["❳", ["rp"]]
-  },
-  "alternative": {
-    "bb": {
-      "a": "𝕒", "b": "𝕓", "c": "𝕔", "d": "𝕕", "e": "𝕖", "f": "𝕗", "g": "𝕘", "h": "𝕙", "i": "𝕚", "j": "𝕛", "k": "𝕜", "l": "𝕝", "m": "𝕞", 
-      "n": "𝕟", "o": "𝕠", "p": "𝕡", "q": "𝕢", "r": "𝕣", "s": "𝕤", "t": "𝕥", "u": "𝕦", "v": "𝕧", "w": "𝕨", "x": "𝕩", "y": "𝕪", "z": "𝕫",
-      "A": "𝔸", "B": "𝔹", "C": "ℂ", "D": "𝔻", "E": "𝔼", "F": "𝔽", "G": "𝔾", "H": "ℍ", "I": "𝕀", "J": "𝕁", "K": "𝕂", "L": "𝕃", "M": "𝕄", 
-      "N": "ℕ", "O": "𝕆", "P": "ℙ", "Q": "ℚ", "R": "ℝ", "S": "𝕊", "T": "𝕋", "U": "𝕌", "V": "𝕍", "W": "𝕎", "X": "𝕏", "Y": "𝕐", "Z": "ℤ",
-      "0": "𝟘", "1": "𝟙", "2": "𝟚", "3": "𝟛", "4": "𝟜", "5": "𝟝", "6": "𝟞", "7": "𝟟", "8": "𝟠", "9": "𝟡"
-    },
-    "scr": {
-      "a": "𝒶", "b": "𝒷", "c": "𝒸", "d": "𝒹", "e": "ℯ", "f": "𝒻", "g": "ℊ", "h": "𝒽", "i": "𝒾", "j": "𝒿", "k": "𝓀", "l": "𝓁", "m": "𝓂", 
-      "n": "𝓃", "o": "ℴ", "p": "𝓅", "q": "𝓆", "r": "𝓇", "s": "𝓈", "t": "𝓉", "u": "𝓊", "v": "𝓋", "w": "𝓌", "x": "𝓍", "y": "𝓎", "z": "𝓏",
-      "A": "\uDB81\uDC98", "B": "\uDB81\uDC99", "C": "\uDB81\uDC9A", "D": "\uDB81\uDC9B", "E": "\uDB81\uDC9C", "F": "\uDB81\uDC9D", "G": "\uDB81\uDC9E",
-      "H": "\uDB81\uDC9F", "I": "\uDB81\uDCA0", "J": "\uDB81\uDCA1", "K": "\uDB81\uDCA2", "L": "\uDB81\uDCA3", "M": "\uDB81\uDCA4", "N": "\uDB81\uDCA5", 
-      "O": "\uDB81\uDCA6", "P": "\uDB81\uDCA7", "Q": "\uDB81\uDCA8", "R": "\uDB81\uDCA9", "S": "\uDB81\uDCAA", "T": "\uDB81\uDCAB", "U": "\uDB81\uDCAC", 
-      "V": "\uDB81\uDCAD", "W": "\uDB81\uDCAE", "X": "\uDB81\uDCAF", "Y": "\uDB81\uDCB0", "Z": "\uDB81\uDCB1"
-    },
-    "frak": {
-      "a": "𝔞", "b": "𝔟", "c": "𝔠", "d": "𝔡", "e": "𝔢", "f": "𝔣", "g": "𝔤", "h": "𝔥", "i": "𝔦", "j": "𝔧", "k": "𝔨", "l": "𝔩", "m": "𝔪", 
-      "n": "𝔫", "o": "𝔬", "p": "𝔭", "q": "𝔮", "r": "𝔯", "s": "𝔰", "t": "𝔱", "u": "𝔲", "v": "𝔳", "w": "𝔴", "x": "𝔵", "y": "𝔶", "z": "𝔷",
-      "A": "𝔄", "B": "𝔅", "C": "ℭ", "D": "𝔇", "E": "𝔈", "F": "𝔉", "G": "𝔊", "H": "ℌ", "I": "ℑ", "J": "𝔍", "K": "𝔎", "L": "𝔏", "M": "𝔐", 
-      "N": "𝔑", "O": "𝔒", "P": "𝔓", "Q": "𝔔", "R": "ℜ", "S": "𝔖", "T": "𝔗", "U": "𝔘", "V": "𝔙", "W": "𝔚", "X": "𝔛", "Y": "𝔜", "Z": "ℨ"
-    }
-  },
-  "greek": {
-    "a": "α", "b": "β", "c": "ψ", "d": "δ", "e": "ε", "f": "φ", "g": "γ", "h": "η", "i": "ι", "j": "ξ", "k": "κ", "l": "λ", "m": "μ", 
-    "n": "ν", "o": "ο", "p": "π", "q": "ϕ", "r": "ρ", "s": "σ", "t": "τ", "u": "θ", "v": "ω", "w": "ς", "x": "χ", "y": "υ", "z": "ζ",
-    "A": "Α", "B": "Β", "C": "Ψ", "D": "Δ", "E": "Ε", "F": "Φ", "G": "Γ", "H": "Η", "I": "Ι", "J": "Ξ", "K": "Κ", "L": "Λ", "M": "Μ", 
-    "N": "Ν", "O": "Ο", "P": "Π", "Q": "Φ", "R": "Ρ", "S": "Σ", "T": "Τ", "U": "Θ", "V": "Ω", "W": "Σ", "X": "Χ", "Y": "Υ", "Z": "Ζ"
-  }
-}
+    <style>math-n{padding:0em 0em;line-height:1}math-i{padding:0em 0em;line-height:1;font-style:italic}math-i.fun{padding:0em .1666666667em 0em 0em;font-style:normal}math-i.alt{font-family:"Math";font-style:normal}math-o{padding:0em .2222222222em;line-height:0.8;font-family:"Math"}math-o.bin{padding:0em .2222222222em}math-o.rel{padding:0em .2777777778em}math-o.del{padding:0em .2777777778em 0em 0em}math-o.not{padding:0em .2777777778em;margin:0em 0em 0em -.5555555556em}math-o.ord{padding:0em 0em}math-o.acc{padding:0em 0em;height:0.2em;line-height:0.9;vertical-align:-0.3em}math-o.int{padding:0em 0em;height:2.3em;line-height:2.3em}math-o.sum{padding:0.1em 0em;line-height:1.4em}math-o.txt{font-family:inherit}math-o.lp{padding:0em 0em 0em .0555555556em}math-i.fun+math-o.lp{padding:0em 0em 0em .0555555556em;margin-left:-.1666666667em}math-o.rp{padding:0em .0555555556em 0em 0em}math-sub math-o,math-sup math-o,math-under math-o,math-over math-o{padding-left:0em !important;padding-right:0em !important}*:not(.raw)>math-o:first-child{padding-left:0em;padding-right:0em}math-frac{padding:0em .1111111111em !important;vertical-align:0.15em}math-frac>math-num{margin:0em 0em -0.1em 0em;text-align:center;display:block}math-frac>math-denwrap{margin:0em 0em;width:100%;display:inline-table}math-frac>math-denwrap>math-line{margin:0em -.1111111111em;padding:0em .1111111111em !important;width:100%;height:1px;border-top:1px solid;box-sizing:content-box}math-frac>math-denwrap>math-den{margin:0em 0em;text-align:center;display:block}math-sqrt>math-surd{margin:0.27em 0em 0em 0em;vertical-align:top;font-size:90%}math-sqrt>math-surd.s1{margin:0.93em 0em 0em 0em}math-sqrt>math-surd.s2{margin:1.46em 0em 0em 0em}math-sqrt>math-surd.s3{margin:1.97em 0em 0em 0em}math-sqrt>math-surd>math-o,math-sqrt>math-surd>math-o.var{padding:0em 0em}math-sqrt>math-sqrtcont{padding:0.1em .0555555556em 0em 0em;border-top:1px solid}math-subsup>math-base{margin:0em 0em}math-subsup>math-sub{padding:0em 0em;vertical-align:-0.36em;font-size:80%}math-subsup>math-sup{padding:0em 0em;vertical-align:0.51em;font-size:80%}math-subsup.int{margin:0em 0em}math-subsup.sub{margin-bottom:-0.05em}math-subsup.sup{margin-top:-0.05em}math-underover>math-over{margin:0em 0em;font-size:80%;text-align:center;display:block}math-underover.acc>math-over{font-size:100%}math-underover>math-basewrap{margin:0em 0em;width:100%;display:inline-table}math-underover>math-basewrap>math-base{margin:0em 0em;text-align:center;display:block}math-underover>math-basewrap>math-under{margin:0em 0em;font-size:80%;text-align:center;display:block}math-underover.acc>math-basewrap>math-under{font-size:100%}math-underover.under{margin-bottom:-0.05em}math-underover.over{margin-top:-0.05em}math-vstretch>math-top,math-vstretch>math-bar>math-barcont,math-vstretch>math-mid,math-vstretch>math-bot{height:1.25em;line-height:2em;font-family:"Math";display:block}math-vstretch>math-mid{height:1.9em;line-height:3.4em}math-vstretch>math-bar{overflow:hidden}math-vstretch>math-bar>math-barcont{transform:scale(1, 100)}math-table{vertical-align:middle;display:inline-grid !important;align-items:baseline}math-table.matrix{gap:.3333333333em .8333333333em}math-table.array{gap:.3333333333em 0em}math-table.case{gap:.3333333333em 1.3333333333em}math-table>math-cell{text-align:center;vertical-align:baseline}math-style.bold{font-weight:bold}math-text{white-space:pre}math-root{line-height:0;display:inline-block;box-sizing:border-box;white-space:nowrap}math-root *{display:inline-block;box-sizing:border-box}math-root *:not(.raw)>*:first-child{padding-left:0em}math-root *:not(.raw)>*:last-child{padding-right:0em}math-root .l0{padding-left:0em}math-root .l1{padding-left:.0555555556em}math-root .l2{padding-left:.1111111111em}math-root .l3{padding-left:.1666666667em}math-root .l4{padding-left:.2222222222em}math-root .l5{padding-left:.2777777778em}math-root .l6{padding-left:.3333333333em}math-root .l7{padding-left:.3888888889em}math-root .l8{padding-left:.4444444444em}math-root .l9{padding-left:.5em}math-root .l10{padding-left:.5555555556em}math-root .l11{padding-left:.6111111111em}math-root .l12{padding-left:.6666666667em}math-root .l13{padding-left:.7222222222em}math-root .l14{padding-left:.7777777778em}math-root .l15{padding-left:.8333333333em}math-root .l16{padding-left:.8888888889em}math-root .l17{padding-left:.9444444444em}math-root .l18{padding-left:1em}math-root .r0{padding-right:0em}math-root .r1{padding-right:.0555555556em}math-root .r2{padding-right:.1111111111em}math-root .r3{padding-right:.1666666667em}math-root .r4{padding-right:.2222222222em}math-root .r5{padding-right:.2777777778em}math-root .r6{padding-right:.3333333333em}math-root .r7{padding-right:.3888888889em}math-root .r8{padding-right:.4444444444em}math-root .r9{padding-right:.5em}math-root .r10{padding-right:.5555555556em}math-root .r11{padding-right:.6111111111em}math-root .r12{padding-right:.6666666667em}math-root .r13{padding-right:.7222222222em}math-root .r14{padding-right:.7777777778em}math-root .r15{padding-right:.8333333333em}math-root .r16{padding-right:.8888888889em}math-root .r17{padding-right:.9444444444em}math-root .r18{padding-right:1em}@font-face{font-family:"Math";src:url("font.otf")}
+</style><script>const DATA = {"radical":{"0":"√","1":"󰄝","2":"󰄞","3":"󰄟"},"paren":{"paren":{"0":["(",")"],"1":["󰀹","󰁅"],"2":["󰀺","󰁆"],"3":["󰀻","󰁇"],"4":["󰀼","󰁈"],"5":["󰀽","󰁉"],"6":["󰀾","󰁊"],"7":["󰀿","󰁋"],"8":["󰁀","󰁌"],"9":["󰁁","󰁍"],"10":["󰁂","󰁎"],"11":["󰁃","󰁏"],"12":["󰁄","󰁐"],"top":["⎛","⎞"],"bar":["⎜","⎟"],"bot":["⎝","⎠"]},"pparen":{"0":["⦅","⦆"],"1":["󰈊","󰈎"],"2":["󰈋","󰈏"],"3":["󰈌","󰈐"],"4":["󰈍","󰈑"]},"bracket":{"0":["[","]"],"1":["󰁑","󰁝"],"2":["󰁒","󰁞"],"3":["󰁓","󰁟"],"4":["󰁔","󰁠"],"5":["󰁕","󰁡"],"6":["󰁖","󰁢"],"7":["󰁗","󰁣"],"8":["󰁘","󰁤"],"9":["󰁙","󰁥"],"10":["󰁚","󰁦"],"11":["󰁛","󰁧"],"12":["󰁜","󰁨"],"top":["⎡","⎤"],"bar":["⎢","⎥"],"bot":["⎣","⎦"]},"bbracket":{"0":["⟦","⟧"],"1":["󰇨","󰇬"],"2":["󰇩","󰇭"],"3":["󰇪","󰇮"],"4":["󰇫","󰇯"]},"brace":{"0":["{","}"],"1":["󰁩","󰁵"],"2":["󰁪","󰁶"],"3":["󰁫","󰁷"],"4":["󰁬","󰁸"],"5":["󰁭","󰁹"],"6":["󰁮","󰁺"],"7":["󰁯","󰁻"],"8":["󰁰","󰁼"],"9":["󰁱","󰁽"],"10":["󰁲","󰁾"],"11":["󰁳","󰁿"],"12":["󰁴","󰂀"],"top":["⎧","⎫"],"bar":["⎪","⎪"],"mid":["⎨","⎬"],"bot":["⎩","⎭"]},"bbrace":{"0":["⦃","⦄"],"1":["󰈂","󰈆"],"2":["󰈃","󰈇"],"3":["󰈄","󰈈"],"4":["󰈅","󰈉"]},"vert":{"0":["|","|"],"bar":["|","|"]},"vvert":{"0":["‖","‖"],"bar":["‖","‖"]},"floor":{"0":["⌊","⌋"],"1":["󰆙","󰆝"],"2":["󰆚","󰆞"],"3":["󰆛","󰆟"],"4":["󰆜","󰆠"]},"ceil":{"0":["⌈","⌉"],"1":["󰆑","󰆕"],"2":["󰆒","󰆖"],"3":["󰆓","󰆗"],"4":["󰆔","󰆘"]},"angle":{"0":["⟨","⟩"],"1":["󰇰","󰇴"],"2":["󰇱","󰇵"],"3":["󰇲","󰇶"],"4":["󰇳","󰇷"]},"aangle":{"0":["⟪","⟫"],"1":["󰇸","󰇼"],"2":["󰇹","󰇽"],"3":["󰇺","󰇾"],"4":["󰇻","󰇿"]},"tort":{"0":["❲","❳"],"1":["󰇠","󰇤"],"2":["󰇡","󰇥"],"3":["󰇢","󰇦"],"4":["󰇣","󰇧"]}}};
 //
 
 
-function calcRadicalStretchLevel(element) {
-  let height = getHeight(element);
-  let stretchLevel = 0;
-  if (height <= 1.35) {
-    stretchLevel = 0;
-  } else if (height <= 1.35 + 0.5 * 1) {
-    stretchLevel = 1;
-  } else if (height <= 1.35 + 0.5 * 2) {
-    stretchLevel = 2;
-  } else {
-    stretchLevel = 3;
-  }
-  return stretchLevel;
-}
-
-function modifyRadical(element) {
-  let surdElement = element.children[0];
-  let surdSymbolElement = surdElement.children[0];
-  let contentElement = element.children[1];
-  let stretchLevel = calcRadicalStretchLevel(element);
-  surdElement.classList.add("s" + stretchLevel);
-  surdSymbolElement.textContent = DATA["radical"][stretchLevel];
-}
-
-function calcParenKind(element) {
-  let kind = "paren";
-  for (let clazz of element.classList) {
-    let match;
-    if (match = clazz.match(/md-paren-(\w+)/)) {
-      kind = match[1];
-    }
-  }
-  return kind;
-}
-
-function calcParenStretchLevel(element, kind) {
-  let height = getHeight(element);
-  let maxStretchLevel = Object.keys(DATA["paren"][kind]).map((s) => s.match(/^\d+$/)).reduce((s, t) => Math.max(s, t));
-  let stretchLevel = 0;
-  if (height <= 1) {
-    stretchLevel = 0;
-  } else if (height <= 1 + 0.27 * 1 && maxStretchLevel >= 1) {
-    stretchLevel = 1;
-  } else if (height <= 1 + 0.27 * 2 && maxStretchLevel >= 2) {
-    stretchLevel = 2;
-  } else if (height <= 1 + 0.27 * 3 && maxStretchLevel >= 3) {
-    stretchLevel = 3;
-  } else if (height <= 1 + 0.27 * 4 && maxStretchLevel >= 4) {
-    stretchLevel = 4;
-  } else if (height <= 1 + 0.27 * 5 && maxStretchLevel >= 5) {
-    stretchLevel = 5;
-  } else if (height <= 1 + 0.27 * 6 && maxStretchLevel >= 6) {
-    stretchLevel = 6;
-  } else if (height <= 1 + 0.27 * 7 && maxStretchLevel >= 7) {
-    stretchLevel = 7;
-  } else if (height <= 1 + 0.27 * 8 && maxStretchLevel >= 8) {
-    stretchLevel = 8;
-  } else if (height <= 1 + 0.27 * 9 && maxStretchLevel >= 9) {
-    stretchLevel = 9;
-  } else if (height <= 1 + 0.27 * 10 && maxStretchLevel >= 10) {
-    stretchLevel = 10;
-  } else if (height <= 1 + 0.27 * 11 && maxStretchLevel >= 11) {
-    stretchLevel = 11;
-  } else if (height <= 1 + 0.27 * 12 && maxStretchLevel >= 12) {
-    stretchLevel = 12;
-  } else {
-    if (DATA["paren"][kind]["bar"]) {
-      stretchLevel = null;
-    } else {
-      stretchLevel = maxStretchLevel;
-    }
-  }
-  return stretchLevel;
-}
-
-function calcParenShift(element) {
-  let shift = getHeight(element) / 2 - getLowerHeight(element);
-  return shift;
-}
-
-function calcBarHeight(element, topElement, bottomElement, middleElement) {
-  let wholeHeight = getHeight(element);
-  let topHeight = (topElement) ? getHeight(topElement) : 0;
-  let bottomHeight = (bottomElement) ? getHeight(bottomElement) : 0;
-  let middleHeight = (middleElement) ? getHeight(middleElement) : 0;
-  let height = wholeHeight - topHeight - bottomHeight - middleHeight;
-  if (middleElement) {
-    height = height / 2;
-  }
-  return height;
-}
-
-function calcStretchShift(element) {
-  let shift = -getLowerHeight(element) + 0.25;
-  return shift;
-}
-
-function modifyParen(element) {
-  let contentElement = element.children[1];
-  let parentElements = [element.children[0], element.children[2]];
-  let kind = calcParenKind(element);
-  for (let position of [0, 1]) {
-    modifyEachParen(contentElement, parentElements[position], kind, position);
-  }
-}
-
-function modifyEachParen(contentElement, parentElement, kind, position) {
-  let stretchLevel = calcParenStretchLevel(contentElement, kind);
-  if (stretchLevel != null) {
-    let symbolElement = parentElement.children[0];
-    let shift = calcParenShift(contentElement);
-    symbolElement.textContent = DATA["paren"][kind][stretchLevel][position];
-    parentElement.style.verticalAlign = "" + shift + "em";
-  } else {
-    let hasTop = !!DATA["paren"][kind]["top"]
-    let hasBottom = !!DATA["paren"][kind]["bot"];
-    let hasMiddle = !!DATA["paren"][kind]["mid"];
-    appendParen(contentElement, parentElement, kind, position, hasTop, hasBottom, hasMiddle);
-  }
-}
-
-function appendParen(contentElement, parentElement, kind, position, hasTop, hasBottom, hasMiddle) {
-  let stretchElement = document.createElement("math-vstretch");
-  let topElement = null;
-  let bottomElement = null;
-  let middleElement = null;
-  if (hasTop) {
-    topElement = document.createElement("math-top");
-    topElement.textContent = DATA["paren"][kind]["top"][position];
-    stretchElement.append(topElement);
-  }
-  if (hasMiddle) {
-    middleElement = document.createElement("math-mid");
-    middleElement.textContent = DATA["paren"][kind]["mid"][position];
-    stretchElement.append(middleElement);
-  }
-  if (hasBottom) {
-    bottomElement = document.createElement("math-bot");
-    bottomElement.textContent = DATA["paren"][kind]["bot"][position];
-    stretchElement.append(bottomElement);
-  }
-  parentElement.removeChild(parentElement.children[0]);
-  parentElement.appendChild(stretchElement);
-  let barSize = (hasMiddle) ? 2 : 1;
-  let barHeight = calcBarHeight(contentElement, topElement, bottomElement, middleElement);
-  let stretchShift = calcStretchShift(contentElement);
-  for (let i = 0 ; i < barSize ; i ++) { 
-    let barElement = document.createElement("math-bar");
-    let barContentElement = document.createElement("math-barcont");
-    barContentElement.textContent = DATA["paren"][kind]["bar"][position];
-    barElement.style.height = "" + barHeight + "em";
-    barElement.append(barContentElement);
-    if (i == 0) {
-      stretchElement.insertBefore(barElement, stretchElement.children[(hasTop) ? 1 : 0]);
-    } else {
-      stretchElement.insertBefore(barElement, stretchElement.children[(hasTop) ? 3 : 2]);
-    }
-  }
-  stretchElement.style.verticalAlign = "" + stretchShift + "em";
-}
-
-function calcSubShift(baseElement, subElement) {
-  let fontRatio = getFontSize(baseElement) / getFontSize(subElement);
-  let shift = (getLowerHeight(baseElement) - 0.2) * fontRatio;
-  return -shift;
-}
-
-function calcSuperShift(baseElement, superElement) {
-  let fontRatio = getFontSize(baseElement) / getFontSize(superElement);
-  let shift = (getUpperHeight(baseElement) - 0.1) * fontRatio;
-  return shift;
-}
-
-function modifySubsuper(element) {
-  let baseElement = element.children[0];
-  let baseSymbolElement = baseElement.children[0];
-  let subElement = element.children[1];
-  let superElement = element.children[2];
-  let lowerWidth = getWidth(subElement);
-  let upperWidth = getWidth(superElement);
-  let lowerShift = calcSubShift(baseElement, subElement);
-  let upperShift = calcSuperShift(baseElement, superElement);
-  let upperMargin = -getWidth(subElement);
-  let lowerMargin = 0;
-  if (baseSymbolElement.classList.contains("int")) {
-    lowerMargin -= 0.6;
-    lowerWidth -= 0.6;
-    upperMargin += 0.6;
-  }
-  subElement.style.verticalAlign = "" + lowerShift + "em";
-  superElement.style.verticalAlign = "" + upperShift + "em";
-  superElement.style.marginLeft = "" + upperMargin + "em";
-  subElement.style.marginLeft = "" + lowerMargin + "em";
-  if (lowerWidth > upperWidth) {
-    superElement.style.width = "" + lowerWidth + "em";
-  }
-  if (subElement.children.length > 0) {
-    element.classList.add("sub");
-  } else {
-    element.removeChild(subElement);
-  }
-  if (superElement.children.length > 0) {
-    element.classList.add("sup");
-  } else {
-    element.removeChild(superElement);
-  }
-}
-
-function modifyUnderover(element) {
-  let underElement = element.children[1].children[1];
-  let overElement = element.children[0];
-  if (underElement.children.length > 0) {
-    element.classList.add("under");
-  } else {
-    underElement.parentNode.removeChild(underElement);
-  }
-  if (overElement.children.length > 0) {
-    element.classList.add("over");
-  } else {
-    element.removeChild(overElement);
-  }
+function execute() {
+  document.querySelectorAll("math-subsup").forEach(modifySubsuper);
+  document.querySelectorAll("math-underover").forEach(modifyUnderover);
+  document.querySelectorAll("math-sqrt.mod").forEach(modifyRadical);
+  document.querySelectorAll("math-paren.mod").forEach(modifyParen);
 }
 
 function getFontSize(element) {
@@ -656,14 +80,246 @@ function renderDebug(element) {
   document.body.appendChild(lowerBox);
   document.body.appendChild(upperBox);
 }
+//
 
-function execute() {
-  document.querySelectorAll("math-subsup").forEach(modifySubsuper);
-  document.querySelectorAll("math-underover").forEach(modifyUnderover);
-  document.querySelectorAll(".md-sqrt").forEach(modifyRadical);
-  document.querySelectorAll(".md-paren").forEach(modifyParen);
+
+function calcParenKinds(element) {
+  let left_kind = "paren";
+  let right_kind = "paren";
+  for (let clazz of element.classList) {
+    let match;
+    if (match = clazz.match(/^left-(\w*)$/)) {
+      left_kind = match[1];
+    } else if (match = clazz.match(/^right-(\w*)$/)) {
+      right_kind = match[1];
+    }
+  }
+  return [left_kind, right_kind];
 }
 
+function calcParenStretchLevel(element, kind) {
+  let height = getHeight(element);
+  let maxStretchLevel = Object.keys(DATA["paren"][kind]).map((s) => s.match(/^\d+$/)).reduce((s, t) => Math.max(s, t));
+  let stretchLevel = 0;
+  if (height <= 1) {
+    stretchLevel = 0;
+  } else if (height <= 1 + 0.27 * 1 && maxStretchLevel >= 1) {
+    stretchLevel = 1;
+  } else if (height <= 1 + 0.27 * 2 && maxStretchLevel >= 2) {
+    stretchLevel = 2;
+  } else if (height <= 1 + 0.27 * 3 && maxStretchLevel >= 3) {
+    stretchLevel = 3;
+  } else if (height <= 1 + 0.27 * 4 && maxStretchLevel >= 4) {
+    stretchLevel = 4;
+  } else if (height <= 1 + 0.27 * 5 && maxStretchLevel >= 5) {
+    stretchLevel = 5;
+  } else if (height <= 1 + 0.27 * 6 && maxStretchLevel >= 6) {
+    stretchLevel = 6;
+  } else if (height <= 1 + 0.27 * 7 && maxStretchLevel >= 7) {
+    stretchLevel = 7;
+  } else if (height <= 1 + 0.27 * 8 && maxStretchLevel >= 8) {
+    stretchLevel = 8;
+  } else if (height <= 1 + 0.27 * 9 && maxStretchLevel >= 9) {
+    stretchLevel = 9;
+  } else if (height <= 1 + 0.27 * 10 && maxStretchLevel >= 10) {
+    stretchLevel = 10;
+  } else if (height <= 1 + 0.27 * 11 && maxStretchLevel >= 11) {
+    stretchLevel = 11;
+  } else if (height <= 1 + 0.27 * 12 && maxStretchLevel >= 12) {
+    stretchLevel = 12;
+  } else {
+    if (DATA["paren"][kind]["bar"]) {
+      stretchLevel = null;
+    } else {
+      stretchLevel = maxStretchLevel;
+    }
+  }
+  return stretchLevel;
+}
+
+function calcParenShift(element) {
+  let shift = getHeight(element) / 2 - getLowerHeight(element);
+  return shift;
+}
+
+function calcParenBarHeight(element, topElement, bottomElement, middleElement) {
+  let wholeHeight = getHeight(element);
+  let topHeight = (topElement) ? getHeight(topElement) : 0;
+  let bottomHeight = (bottomElement) ? getHeight(bottomElement) : 0;
+  let middleHeight = (middleElement) ? getHeight(middleElement) : 0;
+  let height = wholeHeight - topHeight - bottomHeight - middleHeight;
+  if (middleElement) {
+    height = height / 2;
+  }
+  return height;
+}
+
+function calcParenStretchShift(element) {
+  let shift = -getLowerHeight(element) + 0.25;
+  return shift;
+}
+
+function modifyParen(element) {
+  let contentElement = element.children[1];
+  let parentElements = [element.children[0], element.children[2]];
+  let kinds = calcParenKinds(element);
+  for (let position of [0, 1]) {
+    let parentElement = parentElements[position];
+    let kind = kinds[position];
+    if (kind != "none") {
+      let stretchLevel = calcParenStretchLevel(contentElement, kind);
+      if (stretchLevel != null) {
+        modifyParenStretch(contentElement, parentElement, kind, stretchLevel, position);
+      } else {
+        appendParenStretch(contentElement, parentElement, kind, position);
+      }
+    }
+  }
+}
+
+function modifyParenStretch(contentElement, parentElement, kind, stretchLevel, position) {
+  let symbolElement = parentElement.children[0];
+  let shift = calcParenShift(contentElement);
+  symbolElement.textContent = DATA["paren"][kind][stretchLevel][position];
+  parentElement.style.verticalAlign = "" + shift + "em";
+  parentElement.classList.add("s" + stretchLevel);
+}
+
+function appendParenStretch(contentElement, parentElement, kind, position) {
+  let stretchElement = document.createElement("math-vstretch");
+  let hasTop = !!DATA["paren"][kind]["top"];
+  let hasBottom = !!DATA["paren"][kind]["bot"];
+  let hasMiddle = !!DATA["paren"][kind]["mid"];
+  let topElement = null;
+  let bottomElement = null;
+  let middleElement = null;
+  if (hasTop) {
+    topElement = document.createElement("math-top");
+    topElement.textContent = DATA["paren"][kind]["top"][position];
+    stretchElement.append(topElement);
+  }
+  if (hasMiddle) {
+    middleElement = document.createElement("math-mid");
+    middleElement.textContent = DATA["paren"][kind]["mid"][position];
+    stretchElement.append(middleElement);
+  }
+  if (hasBottom) {
+    bottomElement = document.createElement("math-bot");
+    bottomElement.textContent = DATA["paren"][kind]["bot"][position];
+    stretchElement.append(bottomElement);
+  }
+  parentElement.classList.add("sinf");
+  parentElement.removeChild(parentElement.children[0]);
+  parentElement.appendChild(stretchElement);
+  let barSize = (hasMiddle) ? 2 : 1;
+  let barHeight = calcParenBarHeight(contentElement, topElement, bottomElement, middleElement);
+  let stretchShift = calcParenStretchShift(contentElement);
+  for (let i = 0 ; i < barSize ; i ++) { 
+    let barElement = document.createElement("math-bar");
+    let barContentElement = document.createElement("math-barcont");
+    barContentElement.textContent = DATA["paren"][kind]["bar"][position];
+    barElement.style.height = "" + barHeight + "em";
+    barElement.append(barContentElement);
+    if (i == 0) {
+      stretchElement.insertBefore(barElement, stretchElement.children[(hasTop) ? 1 : 0]);
+    } else {
+      stretchElement.insertBefore(barElement, stretchElement.children[(hasTop) ? 3 : 2]);
+    }
+  }
+  stretchElement.style.verticalAlign = "" + stretchShift + "em";
+}
+//
+
+
+function calcRadicalStretchLevel(element) {
+  let height = getHeight(element);
+  let stretchLevel = 0;
+  if (height <= 1.35) {
+    stretchLevel = 0;
+  } else if (height <= 1.35 + 0.5 * 1) {
+    stretchLevel = 1;
+  } else if (height <= 1.35 + 0.5 * 2) {
+    stretchLevel = 2;
+  } else {
+    stretchLevel = 3;
+  }
+  return stretchLevel;
+}
+
+function modifyRadical(element) {
+  let surdElement = element.children[0];
+  let surdSymbolElement = surdElement.children[0];
+  let contentElement = element.children[1];
+  let stretchLevel = calcRadicalStretchLevel(element);
+  surdElement.classList.add("s" + stretchLevel);
+  surdSymbolElement.textContent = DATA["radical"][stretchLevel];
+}
+//
+
+
+function calcSubShift(baseElement, subElement) {
+  let fontRatio = getFontSize(baseElement) / getFontSize(subElement);
+  let shift = (getLowerHeight(baseElement) - 0.2) * fontRatio;
+  return -shift;
+}
+
+function calcSuperShift(baseElement, superElement) {
+  let fontRatio = getFontSize(baseElement) / getFontSize(superElement);
+  let shift = (getUpperHeight(baseElement) - 0.1) * fontRatio;
+  return shift;
+}
+
+function modifySubsuper(element) {
+  let baseElement = element.children[0];
+  let baseSymbolElement = baseElement.children[0];
+  let subElement = element.children[1];
+  let superElement = element.children[2];
+  let subWidth = getWidth(subElement);
+  let supWidth = getWidth(superElement);
+  let subShift = calcSubShift(baseElement, subElement);
+  let superShift = calcSuperShift(baseElement, superElement);
+  let subMargin = 0;
+  let superMargin = -getWidth(subElement);
+  if (baseSymbolElement.classList.contains("int")) {
+    subWidth -= 0.6;
+    subMargin -= 0.6;
+    superMargin += 0.6;
+  }
+  subElement.style.verticalAlign = "" + subShift + "em";
+  superElement.style.verticalAlign = "" + superShift + "em";
+  superElement.style.marginLeft = "" + superMargin + "em";
+  subElement.style.marginLeft = "" + subMargin + "em";
+  if (subWidth > supWidth) {
+    superElement.style.width = "" + subWidth + "em";
+  }
+  if (subElement.children.length > 0) {
+    element.classList.add("sub");
+  } else {
+    element.removeChild(subElement);
+  }
+  if (superElement.children.length > 0) {
+    element.classList.add("sup");
+  } else {
+    element.removeChild(superElement);
+  }
+}
+//
+
+
+function modifyUnderover(element) {
+  let underElement = element.children[1].children[1];
+  let overElement = element.children[0];
+  if (underElement.children.length > 0) {
+    element.classList.add("under");
+  } else {
+    underElement.parentNode.removeChild(underElement);
+  }
+  if (overElement.children.length > 0) {
+    element.classList.add("over");
+  } else {
+    element.removeChild(overElement);
+  }
+}
 window.onload = execute;</script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Zotica</title>
@@ -685,118 +341,124 @@ window.onload = execute;</script>
       </p>
       <h1>Fractions</h1>
       <p>
-        <math-root><math-frac><math-num><math-i>A</math-i></math-num><math-denwrap><math-line></math-line><math-den><math-i>B</math-i></math-den></math-denwrap></math-frac><math-o class="del txt">,</math-o><math-frac><math-num><math-i>c</math-i></math-num><math-denwrap><math-line></math-line><math-den><math-i>e</math-i></math-den></math-denwrap></math-frac></math-root>
+        <math-root><math-frac><math-num><math-i class="">A</math-i></math-num><math-denwrap><math-line></math-line><math-den><math-i class="">B</math-i></math-den></math-denwrap></math-frac><math-o class="del txt">,</math-o><math-frac><math-num><math-i class="">c</math-i></math-num><math-denwrap><math-line></math-line><math-den><math-i class="">e</math-i></math-den></math-denwrap></math-frac></math-root>
         or more complicated
-        <math-root><math-i class=" alt">𝟜</math-i><math-o class="bin">⋔</math-o><math-frac><math-num><math-i>φ</math-i><math-o class="bin">⋈</math-o><math-frac><math-num><math-i>K</math-i></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n></math-den></math-denwrap></math-frac></math-num><math-denwrap><math-line></math-line><math-den><math-n>3</math-n><math-o class="bin">−</math-o><math-frac><math-num><math-frac><math-num><math-n>1</math-n></math-num><math-denwrap><math-line></math-line><math-den><math-i>x</math-i><math-i>y</math-i><math-o class="bin">⊗</math-o><math-i>z</math-i></math-den></math-denwrap></math-frac><math-o class="bin">⨳</math-o><math-frac><math-num><math-i>m</math-i></math-num><math-denwrap><math-line></math-line><math-den><math-n>7</math-n><math-i>Ψ</math-i></math-den></math-denwrap></math-frac></math-num><math-denwrap><math-line></math-line><math-den><math-i>Δ</math-i></math-den></math-denwrap></math-frac></math-den></math-denwrap></math-frac></math-root>.
+        <math-root><math-i class="alt">𝟜</math-i><math-o class="bin">⋔</math-o><math-frac><math-num><math-i class="">φ</math-i><math-o class="bin">⋈</math-o><math-frac><math-num><math-i class="">K</math-i></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n></math-den></math-denwrap></math-frac></math-num><math-denwrap><math-line></math-line><math-den><math-n>3</math-n><math-o class="bin">−</math-o><math-frac><math-num><math-frac><math-num><math-n>1</math-n></math-num><math-denwrap><math-line></math-line><math-den><math-i class="">x</math-i><math-i class="">y</math-i><math-o class="bin">⊗</math-o><math-i class="">z</math-i></math-den></math-denwrap></math-frac><math-o class="bin">⨳</math-o><math-frac><math-num><math-i class="">m</math-i></math-num><math-denwrap><math-line></math-line><math-den><math-n>7</math-n><math-i class="">Ψ</math-i></math-den></math-denwrap></math-frac></math-num><math-denwrap><math-line></math-line><math-den><math-i class="">Δ</math-i></math-den></math-denwrap></math-frac></math-den></math-denwrap></math-frac></math-root>.
       </p>
       <h1>Radicals</h1>
       <p>
-        <math-root><math-sqrt class="md-sqrt"><math-surd><math-o>√</math-o></math-surd><math-sqrtcont><math-i>A</math-i></math-sqrtcont></math-sqrt><math-o class="del txt">,</math-o><math-sqrt class="md-sqrt"><math-surd><math-o>√</math-o></math-surd><math-sqrtcont><math-i>c</math-i></math-sqrtcont></math-sqrt></math-root>
+        <math-root><math-sqrt class="mod"><math-surd><math-o>√</math-o></math-surd><math-sqrtcont><math-i class="">A</math-i></math-sqrtcont></math-sqrt><math-o class="del txt">,</math-o><math-sqrt class="mod"><math-surd><math-o>√</math-o></math-surd><math-sqrtcont><math-i class="">c</math-i></math-sqrtcont></math-sqrt></math-root>
         or
-        <math-root><math-sqrt class="md-sqrt"><math-surd><math-o>√</math-o></math-surd><math-sqrtcont><math-frac><math-num><math-n>1</math-n></math-num><math-denwrap><math-line></math-line><math-den><math-i>i</math-i><math-o class="bin">⩕</math-o><math-i>j</math-i></math-den></math-denwrap></math-frac><math-o class="bin">+</math-o><math-frac><math-num><math-n>1</math-n></math-num><math-denwrap><math-line></math-line><math-den><math-i>j</math-i><math-o class="bin">⩖</math-o><math-i>i</math-i></math-den></math-denwrap></math-frac></math-sqrtcont></math-sqrt></math-root>
+        <math-root><math-sqrt class="mod"><math-surd><math-o>√</math-o></math-surd><math-sqrtcont><math-frac><math-num><math-n>1</math-n></math-num><math-denwrap><math-line></math-line><math-den><math-i class="">i</math-i><math-o class="bin">⩕</math-o><math-i class="">j</math-i></math-den></math-denwrap></math-frac><math-o class="bin">+</math-o><math-frac><math-num><math-n>1</math-n></math-num><math-denwrap><math-line></math-line><math-den><math-i class="">j</math-i><math-o class="bin">⩖</math-o><math-i class="">i</math-i></math-den></math-denwrap></math-frac></math-sqrtcont></math-sqrt></math-root>
         or
-        <math-root><math-frac><math-num><math-i>W</math-i></math-num><math-denwrap><math-line></math-line><math-den><math-sqrt class="md-sqrt"><math-surd><math-o>√</math-o></math-surd><math-sqrtcont><math-n>5</math-n><math-i>W</math-i></math-sqrtcont></math-sqrt></math-den></math-denwrap></math-frac><math-o class="rel">=</math-o><math-sqrt class="md-sqrt"><math-surd><math-o>√</math-o></math-surd><math-sqrtcont><math-frac><math-num><math-i>W</math-i></math-num><math-denwrap><math-line></math-line><math-den><math-n>5</math-n></math-den></math-denwrap></math-frac></math-sqrtcont></math-sqrt></math-root>.
+        <math-root><math-frac><math-num><math-i class="">W</math-i></math-num><math-denwrap><math-line></math-line><math-den><math-sqrt class="mod"><math-surd><math-o>√</math-o></math-surd><math-sqrtcont><math-n>5</math-n><math-i class="">W</math-i></math-sqrtcont></math-sqrt></math-den></math-denwrap></math-frac><math-o class="rel">=</math-o><math-sqrt class="mod"><math-surd><math-o>√</math-o></math-surd><math-sqrtcont><math-frac><math-num><math-i class="">W</math-i></math-num><math-denwrap><math-line></math-line><math-den><math-n>5</math-n></math-den></math-denwrap></math-frac></math-sqrtcont></math-sqrt></math-root>.
       </p>
       <p>
         Sizes:
-        <math-root><math-sqrt class="md-sqrt"><math-surd><math-o>√</math-o></math-surd><math-sqrtcont><span class="box" style="height:1em"></span></math-sqrtcont></math-sqrt></math-root>
-        <math-root><math-sqrt class="md-sqrt"><math-surd><math-o>√</math-o></math-surd><math-sqrtcont><span class="box" style="height:1.1em"></span></math-sqrtcont></math-sqrt></math-root>
-        <math-root><math-sqrt class="md-sqrt"><math-surd><math-o>√</math-o></math-surd><math-sqrtcont><span class="box" style="height:1.2em"></span></math-sqrtcont></math-sqrt></math-root>
-        <math-root><math-sqrt class="md-sqrt"><math-surd><math-o>√</math-o></math-surd><math-sqrtcont><span class="box" style="height:1.3em"></span></math-sqrtcont></math-sqrt></math-root>
-        <math-root><math-sqrt class="md-sqrt"><math-surd><math-o>√</math-o></math-surd><math-sqrtcont><span class="box" style="height:1.4em"></span></math-sqrtcont></math-sqrt></math-root>
-        <math-root><math-sqrt class="md-sqrt"><math-surd><math-o>√</math-o></math-surd><math-sqrtcont><span class="box" style="height:1.5em"></span></math-sqrtcont></math-sqrt></math-root>
-        <math-root><math-sqrt class="md-sqrt"><math-surd><math-o>√</math-o></math-surd><math-sqrtcont><span class="box" style="height:1.6em"></span></math-sqrtcont></math-sqrt></math-root>
-        <math-root><math-sqrt class="md-sqrt"><math-surd><math-o>√</math-o></math-surd><math-sqrtcont><span class="box" style="height:1.7em"></span></math-sqrtcont></math-sqrt></math-root>
-        <math-root><math-sqrt class="md-sqrt"><math-surd><math-o>√</math-o></math-surd><math-sqrtcont><span class="box" style="height:1.8em"></span></math-sqrtcont></math-sqrt></math-root>
-        <math-root><math-sqrt class="md-sqrt"><math-surd><math-o>√</math-o></math-surd><math-sqrtcont><span class="box" style="height:1.9em"></span></math-sqrtcont></math-sqrt></math-root>
-        <math-root><math-sqrt class="md-sqrt"><math-surd><math-o>√</math-o></math-surd><math-sqrtcont><span class="box" style="height:2em"></span></math-sqrtcont></math-sqrt></math-root>
-        <math-root><math-sqrt class="md-sqrt"><math-surd><math-o>√</math-o></math-surd><math-sqrtcont><span class="box" style="height:2.1em"></span></math-sqrtcont></math-sqrt></math-root>
-        <math-root><math-sqrt class="md-sqrt"><math-surd><math-o>√</math-o></math-surd><math-sqrtcont><span class="box" style="height:2.2em"></span></math-sqrtcont></math-sqrt></math-root>
-        <math-root><math-sqrt class="md-sqrt"><math-surd><math-o>√</math-o></math-surd><math-sqrtcont><span class="box" style="height:2.3em"></span></math-sqrtcont></math-sqrt></math-root>
-        <math-root><math-sqrt class="md-sqrt"><math-surd><math-o>√</math-o></math-surd><math-sqrtcont><span class="box" style="height:2.4em"></span></math-sqrtcont></math-sqrt></math-root>.
+        <math-root><math-sqrt class="mod"><math-surd><math-o>√</math-o></math-surd><math-sqrtcont><span class="box" style="height:1em"></span></math-sqrtcont></math-sqrt></math-root>
+        <math-root><math-sqrt class="mod"><math-surd><math-o>√</math-o></math-surd><math-sqrtcont><span class="box" style="height:1.1em"></span></math-sqrtcont></math-sqrt></math-root>
+        <math-root><math-sqrt class="mod"><math-surd><math-o>√</math-o></math-surd><math-sqrtcont><span class="box" style="height:1.2em"></span></math-sqrtcont></math-sqrt></math-root>
+        <math-root><math-sqrt class="mod"><math-surd><math-o>√</math-o></math-surd><math-sqrtcont><span class="box" style="height:1.3em"></span></math-sqrtcont></math-sqrt></math-root>
+        <math-root><math-sqrt class="mod"><math-surd><math-o>√</math-o></math-surd><math-sqrtcont><span class="box" style="height:1.4em"></span></math-sqrtcont></math-sqrt></math-root>
+        <math-root><math-sqrt class="mod"><math-surd><math-o>√</math-o></math-surd><math-sqrtcont><span class="box" style="height:1.5em"></span></math-sqrtcont></math-sqrt></math-root>
+        <math-root><math-sqrt class="mod"><math-surd><math-o>√</math-o></math-surd><math-sqrtcont><span class="box" style="height:1.6em"></span></math-sqrtcont></math-sqrt></math-root>
+        <math-root><math-sqrt class="mod"><math-surd><math-o>√</math-o></math-surd><math-sqrtcont><span class="box" style="height:1.7em"></span></math-sqrtcont></math-sqrt></math-root>
+        <math-root><math-sqrt class="mod"><math-surd><math-o>√</math-o></math-surd><math-sqrtcont><span class="box" style="height:1.8em"></span></math-sqrtcont></math-sqrt></math-root>
+        <math-root><math-sqrt class="mod"><math-surd><math-o>√</math-o></math-surd><math-sqrtcont><span class="box" style="height:1.9em"></span></math-sqrtcont></math-sqrt></math-root>
+        <math-root><math-sqrt class="mod"><math-surd><math-o>√</math-o></math-surd><math-sqrtcont><span class="box" style="height:2em"></span></math-sqrtcont></math-sqrt></math-root>
+        <math-root><math-sqrt class="mod"><math-surd><math-o>√</math-o></math-surd><math-sqrtcont><span class="box" style="height:2.1em"></span></math-sqrtcont></math-sqrt></math-root>
+        <math-root><math-sqrt class="mod"><math-surd><math-o>√</math-o></math-surd><math-sqrtcont><span class="box" style="height:2.2em"></span></math-sqrtcont></math-sqrt></math-root>
+        <math-root><math-sqrt class="mod"><math-surd><math-o>√</math-o></math-surd><math-sqrtcont><span class="box" style="height:2.3em"></span></math-sqrtcont></math-sqrt></math-root>
+        <math-root><math-sqrt class="mod"><math-surd><math-o>√</math-o></math-surd><math-sqrtcont><span class="box" style="height:2.4em"></span></math-sqrtcont></math-sqrt></math-root>.
+      </p>
+      <p>
+        Very large: not implemented.
       </p>
       <h1>Parentheses</h1>
       <p>
-        <math-root><math-o class="lp">(</math-o><math-i>A</math-i><math-o class="rp">)</math-o></math-root>, <math-root><math-paren class="md-paren md-paren-vert"><math-left><math-o class="lp">|</math-o></math-left><math-parencont><math-i>B</math-i></math-parencont><math-right><math-o class="rp">|</math-o></math-right></math-paren></math-root>, <math-root><math-paren class="md-paren md-paren-brace"><math-left><math-o class="lp">{</math-o></math-left><math-parencont><math-frac><math-num><math-n>1</math-n></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n></math-den></math-denwrap></math-frac></math-parencont><math-right><math-o class="rp">}</math-o></math-right></math-paren></math-root>, <math-root><math-paren class="md-paren md-paren-angle"><math-left><math-o class="lp">⟨</math-o></math-left><math-parencont><math-frac><math-num><math-n>1</math-n></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n></math-den></math-denwrap></math-frac></math-parencont><math-right><math-o class="rp">⟩</math-o></math-right></math-paren></math-root>, <math-root><math-paren class="md-paren md-paren-tort"><math-left><math-o class="lp">❲</math-o></math-left><math-parencont><math-frac><math-num><math-n>1</math-n></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n></math-den></math-denwrap></math-frac></math-parencont><math-right><math-o class="rp">❳</math-o></math-right></math-paren></math-root>, <math-root><math-paren class="md-paren md-paren-ceil"><math-left><math-o class="lp">⌈</math-o></math-left><math-parencont><math-subsup><math-base><math-n>2</math-n></math-base><math-sub></math-sub><math-sup><math-subsup><math-base><math-n>3</math-n></math-base><math-sub></math-sub><math-sup><math-n>4</math-n></math-sup></math-subsup></math-sup></math-subsup></math-parencont><math-right><math-o class="rp">⌉</math-o></math-right></math-paren></math-root>, <math-root><math-paren class="md-paren md-paren-pparen"><math-left><math-o class="lp">⦅</math-o></math-left><math-parencont><math-subsup><math-base><math-n>2</math-n></math-base><math-sub></math-sub><math-sup><math-subsup><math-base><math-n>3</math-n></math-base><math-sub></math-sub><math-sup><math-n>4</math-n></math-sup></math-subsup></math-sup></math-subsup></math-parencont><math-right><math-o class="rp">⦆</math-o></math-right></math-paren></math-root>, <math-root><math-paren class="md-paren md-paren-vvert"><math-left><math-o class="lp">‖</math-o></math-left><math-parencont><math-frac><math-num><math-n>1</math-n><math-o class="bin">+</math-o><math-frac><math-num><math-n>1</math-n></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n></math-den></math-denwrap></math-frac></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n></math-den></math-denwrap></math-frac></math-parencont><math-right><math-o class="rp">‖</math-o></math-right></math-paren></math-root>,
+        <math-root><math-o class="lp">(</math-o><math-i class="">A</math-i><math-o class="rp">)</math-o></math-root>, <math-root><math-paren class="mod left-vert right-vert"><math-left><math-o class="lp">|</math-o></math-left><math-parencont><math-i class="">B</math-i></math-parencont><math-right><math-o class="rp">|</math-o></math-right></math-paren></math-root>, <math-root><math-paren class="mod left-brace right-brace"><math-left><math-o class="lp">{</math-o></math-left><math-parencont><math-frac><math-num><math-n>1</math-n></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n></math-den></math-denwrap></math-frac></math-parencont><math-right><math-o class="rp">}</math-o></math-right></math-paren></math-root>, <math-root><math-paren class="mod left-angle right-angle"><math-left><math-o class="lp">⟨</math-o></math-left><math-parencont><math-frac><math-num><math-n>1</math-n></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n></math-den></math-denwrap></math-frac></math-parencont><math-right><math-o class="rp">⟩</math-o></math-right></math-paren></math-root>, <math-root><math-paren class="mod left-tort right-tort"><math-left><math-o class="lp">❲</math-o></math-left><math-parencont><math-frac><math-num><math-n>1</math-n></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n></math-den></math-denwrap></math-frac></math-parencont><math-right><math-o class="rp">❳</math-o></math-right></math-paren></math-root>, <math-root><math-paren class="mod left-ceil right-ceil"><math-left><math-o class="lp">⌈</math-o></math-left><math-parencont><math-subsup><math-base><math-n>2</math-n></math-base><math-sub></math-sub><math-sup><math-subsup><math-base><math-n>3</math-n></math-base><math-sub></math-sub><math-sup><math-n>4</math-n></math-sup></math-subsup></math-sup></math-subsup></math-parencont><math-right><math-o class="rp">⌉</math-o></math-right></math-paren></math-root>, <math-root><math-paren class="mod left-pparen right-pparen"><math-left><math-o class="lp">⦅</math-o></math-left><math-parencont><math-subsup><math-base><math-n>2</math-n></math-base><math-sub></math-sub><math-sup><math-subsup><math-base><math-n>3</math-n></math-base><math-sub></math-sub><math-sup><math-n>4</math-n></math-sup></math-subsup></math-sup></math-subsup></math-parencont><math-right><math-o class="rp">⦆</math-o></math-right></math-paren></math-root>, <math-root><math-paren class="mod left-vvert right-vvert"><math-left><math-o class="lp">‖</math-o></math-left><math-parencont><math-frac><math-num><math-n>1</math-n><math-o class="bin">+</math-o><math-frac><math-num><math-n>1</math-n></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n></math-den></math-denwrap></math-frac></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n></math-den></math-denwrap></math-frac></math-parencont><math-right><math-o class="rp">‖</math-o></math-right></math-paren></math-root>,
         or more
-        <math-root><math-subsup><math-base><math-paren class="md-paren md-paren-bracket"><math-left><math-o class="lp">[</math-o></math-left><math-parencont><math-n>1</math-n><math-o class="bin">+</math-o><math-frac><math-num><math-n>1</math-n><math-o class="bin">+</math-o><math-frac><math-num><math-subsup><math-base><math-i>α</math-i></math-base><math-sub></math-sub><math-sup><math-n>2</math-n></math-sup></math-subsup></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n></math-den></math-denwrap></math-frac></math-num><math-denwrap><math-line></math-line><math-den><math-n>4</math-n></math-den></math-denwrap></math-frac></math-parencont><math-right><math-o class="rp">]</math-o></math-right></math-paren></math-base><math-sub></math-sub><math-sup><math-i>n</math-i><math-o class="bin">+</math-o><math-frac><math-num><math-n>1</math-n></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n></math-den></math-denwrap></math-frac></math-sup></math-subsup></math-root>.
+        <math-root><math-subsup><math-base><math-paren class="mod left-bracket right-bracket"><math-left><math-o class="lp">[</math-o></math-left><math-parencont><math-n>1</math-n><math-o class="bin">+</math-o><math-frac><math-num><math-n>1</math-n><math-o class="bin">+</math-o><math-frac><math-num><math-subsup><math-base><math-i class="">α</math-i></math-base><math-sub></math-sub><math-sup><math-n>2</math-n></math-sup></math-subsup></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n></math-den></math-denwrap></math-frac></math-num><math-denwrap><math-line></math-line><math-den><math-n>4</math-n></math-den></math-denwrap></math-frac></math-parencont><math-right><math-o class="rp">]</math-o></math-right></math-paren></math-base><math-sub></math-sub><math-sup><math-i class="">n</math-i><math-o class="bin">+</math-o><math-frac><math-num><math-n>1</math-n></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n></math-den></math-denwrap></math-frac></math-sup></math-subsup></math-root>.
       </p>
       <p>
         Sizes:
-        <math-root><math-paren class="md-paren md-paren-paren"><math-left><math-o class="lp">(</math-o></math-left><math-parencont><span class="box" style="height:1em"></span></math-parencont><math-right><math-o class="rp">)</math-o></math-right></math-paren></math-root>
-        <math-root><math-paren class="md-paren md-paren-paren"><math-left><math-o class="lp">(</math-o></math-left><math-parencont><span class="box" style="height:1.2em"></span></math-parencont><math-right><math-o class="rp">)</math-o></math-right></math-paren></math-root>
-        <math-root><math-paren class="md-paren md-paren-paren"><math-left><math-o class="lp">(</math-o></math-left><math-parencont><span class="box" style="height:1.4em"></span></math-parencont><math-right><math-o class="rp">)</math-o></math-right></math-paren></math-root>
-        <math-root><math-paren class="md-paren md-paren-paren"><math-left><math-o class="lp">(</math-o></math-left><math-parencont><span class="box" style="height:1.6em"></span></math-parencont><math-right><math-o class="rp">)</math-o></math-right></math-paren></math-root>
-        <math-root><math-paren class="md-paren md-paren-paren"><math-left><math-o class="lp">(</math-o></math-left><math-parencont><span class="box" style="height:1.8em"></span></math-parencont><math-right><math-o class="rp">)</math-o></math-right></math-paren></math-root>
-        <math-root><math-paren class="md-paren md-paren-paren"><math-left><math-o class="lp">(</math-o></math-left><math-parencont><span class="box" style="height:2em"></span></math-parencont><math-right><math-o class="rp">)</math-o></math-right></math-paren></math-root>
-        <math-root><math-paren class="md-paren md-paren-paren"><math-left><math-o class="lp">(</math-o></math-left><math-parencont><span class="box" style="height:2.2em"></span></math-parencont><math-right><math-o class="rp">)</math-o></math-right></math-paren></math-root>
-        <math-root><math-paren class="md-paren md-paren-paren"><math-left><math-o class="lp">(</math-o></math-left><math-parencont><span class="box" style="height:2.4em"></span></math-parencont><math-right><math-o class="rp">)</math-o></math-right></math-paren></math-root>
-        <math-root><math-paren class="md-paren md-paren-paren"><math-left><math-o class="lp">(</math-o></math-left><math-parencont><span class="box" style="height:2.6em"></span></math-parencont><math-right><math-o class="rp">)</math-o></math-right></math-paren></math-root>
-        <math-root><math-paren class="md-paren md-paren-paren"><math-left><math-o class="lp">(</math-o></math-left><math-parencont><span class="box" style="height:2.8em"></span></math-parencont><math-right><math-o class="rp">)</math-o></math-right></math-paren></math-root>
-        <math-root><math-paren class="md-paren md-paren-paren"><math-left><math-o class="lp">(</math-o></math-left><math-parencont><span class="box" style="height:3em"></span></math-parencont><math-right><math-o class="rp">)</math-o></math-right></math-paren></math-root>
-        <math-root><math-paren class="md-paren md-paren-paren"><math-left><math-o class="lp">(</math-o></math-left><math-parencont><span class="box" style="height:3.2em"></span></math-parencont><math-right><math-o class="rp">)</math-o></math-right></math-paren></math-root>
-        <math-root><math-paren class="md-paren md-paren-paren"><math-left><math-o class="lp">(</math-o></math-left><math-parencont><span class="box" style="height:3.4em"></span></math-parencont><math-right><math-o class="rp">)</math-o></math-right></math-paren></math-root>
-        <math-root><math-paren class="md-paren md-paren-paren"><math-left><math-o class="lp">(</math-o></math-left><math-parencont><span class="box" style="height:3.6em"></span></math-parencont><math-right><math-o class="rp">)</math-o></math-right></math-paren></math-root>
-        <math-root><math-paren class="md-paren md-paren-paren"><math-left><math-o class="lp">(</math-o></math-left><math-parencont><span class="box" style="height:3.8em"></span></math-parencont><math-right><math-o class="rp">)</math-o></math-right></math-paren></math-root>
-        <math-root><math-paren class="md-paren md-paren-paren"><math-left><math-o class="lp">(</math-o></math-left><math-parencont><span class="box" style="height:4em"></span></math-parencont><math-right><math-o class="rp">)</math-o></math-right></math-paren></math-root>.
+        <math-root><math-paren class="mod left-paren right-paren"><math-left><math-o class="lp">(</math-o></math-left><math-parencont><span class="box" style="height:1em"></span></math-parencont><math-right><math-o class="rp">)</math-o></math-right></math-paren></math-root>
+        <math-root><math-paren class="mod left-paren right-paren"><math-left><math-o class="lp">(</math-o></math-left><math-parencont><span class="box" style="height:1.2em"></span></math-parencont><math-right><math-o class="rp">)</math-o></math-right></math-paren></math-root>
+        <math-root><math-paren class="mod left-paren right-paren"><math-left><math-o class="lp">(</math-o></math-left><math-parencont><span class="box" style="height:1.4em"></span></math-parencont><math-right><math-o class="rp">)</math-o></math-right></math-paren></math-root>
+        <math-root><math-paren class="mod left-paren right-paren"><math-left><math-o class="lp">(</math-o></math-left><math-parencont><span class="box" style="height:1.6em"></span></math-parencont><math-right><math-o class="rp">)</math-o></math-right></math-paren></math-root>
+        <math-root><math-paren class="mod left-paren right-paren"><math-left><math-o class="lp">(</math-o></math-left><math-parencont><span class="box" style="height:1.8em"></span></math-parencont><math-right><math-o class="rp">)</math-o></math-right></math-paren></math-root>
+        <math-root><math-paren class="mod left-paren right-paren"><math-left><math-o class="lp">(</math-o></math-left><math-parencont><span class="box" style="height:2em"></span></math-parencont><math-right><math-o class="rp">)</math-o></math-right></math-paren></math-root>
+        <math-root><math-paren class="mod left-paren right-paren"><math-left><math-o class="lp">(</math-o></math-left><math-parencont><span class="box" style="height:2.2em"></span></math-parencont><math-right><math-o class="rp">)</math-o></math-right></math-paren></math-root>
+        <math-root><math-paren class="mod left-paren right-paren"><math-left><math-o class="lp">(</math-o></math-left><math-parencont><span class="box" style="height:2.4em"></span></math-parencont><math-right><math-o class="rp">)</math-o></math-right></math-paren></math-root>
+        <math-root><math-paren class="mod left-paren right-paren"><math-left><math-o class="lp">(</math-o></math-left><math-parencont><span class="box" style="height:2.6em"></span></math-parencont><math-right><math-o class="rp">)</math-o></math-right></math-paren></math-root>
+        <math-root><math-paren class="mod left-paren right-paren"><math-left><math-o class="lp">(</math-o></math-left><math-parencont><span class="box" style="height:2.8em"></span></math-parencont><math-right><math-o class="rp">)</math-o></math-right></math-paren></math-root>
+        <math-root><math-paren class="mod left-paren right-paren"><math-left><math-o class="lp">(</math-o></math-left><math-parencont><span class="box" style="height:3em"></span></math-parencont><math-right><math-o class="rp">)</math-o></math-right></math-paren></math-root>
+        <math-root><math-paren class="mod left-paren right-paren"><math-left><math-o class="lp">(</math-o></math-left><math-parencont><span class="box" style="height:3.2em"></span></math-parencont><math-right><math-o class="rp">)</math-o></math-right></math-paren></math-root>
+        <math-root><math-paren class="mod left-paren right-paren"><math-left><math-o class="lp">(</math-o></math-left><math-parencont><span class="box" style="height:3.4em"></span></math-parencont><math-right><math-o class="rp">)</math-o></math-right></math-paren></math-root>
+        <math-root><math-paren class="mod left-paren right-paren"><math-left><math-o class="lp">(</math-o></math-left><math-parencont><span class="box" style="height:3.6em"></span></math-parencont><math-right><math-o class="rp">)</math-o></math-right></math-paren></math-root>
+        <math-root><math-paren class="mod left-paren right-paren"><math-left><math-o class="lp">(</math-o></math-left><math-parencont><span class="box" style="height:3.8em"></span></math-parencont><math-right><math-o class="rp">)</math-o></math-right></math-paren></math-root>
+        <math-root><math-paren class="mod left-paren right-paren"><math-left><math-o class="lp">(</math-o></math-left><math-parencont><span class="box" style="height:4em"></span></math-parencont><math-right><math-o class="rp">)</math-o></math-right></math-paren></math-root>.
       </p>
       <p>
         Very large:
-        <math-root><math-paren class="md-paren md-paren-paren"><math-left><math-o class="lp">(</math-o></math-left><math-parencont><math-frac><math-num><math-n>1</math-n><math-o class="bin">+</math-o><math-frac><math-num><math-n>1</math-n><math-o class="bin">+</math-o><math-frac><math-num><math-n>1</math-n></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n></math-den></math-denwrap></math-frac></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n><math-o class="bin">+</math-o><math-frac><math-num><math-n>1</math-n></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n></math-den></math-denwrap></math-frac></math-den></math-denwrap></math-frac></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n><math-o class="bin">+</math-o><math-frac><math-num><math-n>1</math-n><math-o class="bin">+</math-o><math-frac><math-num><math-n>1</math-n></math-num><math-denwrap><math-line></math-line><math-den><math-frac><math-num><math-n>1</math-n></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n></math-den></math-denwrap></math-frac></math-den></math-denwrap></math-frac></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n></math-den></math-denwrap></math-frac></math-den></math-denwrap></math-frac></math-parencont><math-right><math-o class="rp">)</math-o></math-right></math-paren></math-root>,
-        <math-root><math-subsup><math-base><math-paren class="md-paren md-paren-bracket"><math-left><math-o class="lp">[</math-o></math-left><math-parencont><math-frac><math-num><math-n>1</math-n><math-o class="bin">+</math-o><math-frac><math-num><math-n>3</math-n></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n><math-o class="bin">+</math-o><math-frac><math-num><math-n>1</math-n></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n></math-den></math-denwrap></math-frac></math-den></math-denwrap></math-frac></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n><math-o class="bin">+</math-o><math-frac><math-num><math-n>1</math-n><math-o class="bin">+</math-o><math-frac><math-num><math-n>1</math-n></math-num><math-denwrap><math-line></math-line><math-den><math-n>1</math-n><math-o class="bin">+</math-o><math-frac><math-num><math-n>1</math-n></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n></math-den></math-denwrap></math-frac></math-den></math-denwrap></math-frac></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n><math-o class="bin">+</math-o><math-frac><math-num><math-n>1</math-n></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n></math-den></math-denwrap></math-frac></math-den></math-denwrap></math-frac></math-den></math-denwrap></math-frac></math-parencont><math-right><math-o class="rp">]</math-o></math-right></math-paren></math-base><math-sub><math-i>S</math-i><math-i>b</math-i></math-sub><math-sup><math-i>S</math-i><math-i>p</math-i></math-sup></math-subsup></math-root>,
-        <math-root><math-subsup><math-base><math-paren class="md-paren md-paren-brace"><math-left><math-o class="lp">{</math-o></math-left><math-parencont><math-frac><math-num><math-n>1</math-n><math-o class="bin">+</math-o><math-frac><math-num><math-n>1</math-n><math-o class="bin">+</math-o><math-frac><math-num><math-n>1</math-n><math-o class="bin">+</math-o><math-frac><math-num><math-n>1</math-n></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n></math-den></math-denwrap></math-frac></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n></math-den></math-denwrap></math-frac></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n></math-den></math-denwrap></math-frac></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n><math-o class="bin">+</math-o><math-frac><math-num><math-n>1</math-n><math-o class="bin">+</math-o><math-frac><math-num><math-n>1</math-n></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n></math-den></math-denwrap></math-frac></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n></math-den></math-denwrap></math-frac></math-den></math-denwrap></math-frac></math-parencont><math-right><math-o class="rp">}</math-o></math-right></math-paren></math-base><math-sub><math-i>S</math-i><math-i>b</math-i></math-sub><math-sup><math-i>S</math-i><math-i>p</math-i></math-sup></math-subsup></math-root>.
+        <math-root><math-paren class="mod left-paren right-paren"><math-left><math-o class="lp">(</math-o></math-left><math-parencont><math-frac><math-num><math-n>1</math-n><math-o class="bin">+</math-o><math-frac><math-num><math-n>1</math-n><math-o class="bin">+</math-o><math-frac><math-num><math-n>1</math-n></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n></math-den></math-denwrap></math-frac></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n><math-o class="bin">+</math-o><math-frac><math-num><math-n>1</math-n></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n></math-den></math-denwrap></math-frac></math-den></math-denwrap></math-frac></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n><math-o class="bin">+</math-o><math-frac><math-num><math-n>1</math-n><math-o class="bin">+</math-o><math-frac><math-num><math-n>1</math-n></math-num><math-denwrap><math-line></math-line><math-den><math-frac><math-num><math-n>1</math-n></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n></math-den></math-denwrap></math-frac></math-den></math-denwrap></math-frac></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n></math-den></math-denwrap></math-frac></math-den></math-denwrap></math-frac></math-parencont><math-right><math-o class="rp">)</math-o></math-right></math-paren></math-root>,
+        <math-root><math-subsup><math-base><math-paren class="mod left-bracket right-bracket"><math-left><math-o class="lp">[</math-o></math-left><math-parencont><math-frac><math-num><math-n>1</math-n><math-o class="bin">+</math-o><math-frac><math-num><math-n>3</math-n></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n><math-o class="bin">+</math-o><math-frac><math-num><math-n>1</math-n></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n></math-den></math-denwrap></math-frac></math-den></math-denwrap></math-frac></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n><math-o class="bin">+</math-o><math-frac><math-num><math-n>1</math-n><math-o class="bin">+</math-o><math-frac><math-num><math-n>1</math-n></math-num><math-denwrap><math-line></math-line><math-den><math-n>1</math-n><math-o class="bin">+</math-o><math-frac><math-num><math-n>1</math-n></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n></math-den></math-denwrap></math-frac></math-den></math-denwrap></math-frac></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n><math-o class="bin">+</math-o><math-frac><math-num><math-n>1</math-n></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n></math-den></math-denwrap></math-frac></math-den></math-denwrap></math-frac></math-den></math-denwrap></math-frac></math-parencont><math-right><math-o class="rp">]</math-o></math-right></math-paren></math-base><math-sub><math-i class="">S</math-i><math-i class="">b</math-i></math-sub><math-sup><math-i class="">S</math-i><math-i class="">p</math-i></math-sup></math-subsup></math-root>,
+        <math-root><math-subsup><math-base><math-paren class="mod left-brace right-brace"><math-left><math-o class="lp">{</math-o></math-left><math-parencont><math-frac><math-num><math-n>1</math-n><math-o class="bin">+</math-o><math-frac><math-num><math-n>1</math-n><math-o class="bin">+</math-o><math-frac><math-num><math-n>1</math-n><math-o class="bin">+</math-o><math-frac><math-num><math-n>1</math-n></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n></math-den></math-denwrap></math-frac></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n></math-den></math-denwrap></math-frac></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n></math-den></math-denwrap></math-frac></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n><math-o class="bin">+</math-o><math-frac><math-num><math-n>1</math-n><math-o class="bin">+</math-o><math-frac><math-num><math-n>1</math-n></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n></math-den></math-denwrap></math-frac></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n></math-den></math-denwrap></math-frac></math-den></math-denwrap></math-frac></math-parencont><math-right><math-o class="rp">}</math-o></math-right></math-paren></math-base><math-sub><math-i class="">S</math-i><math-i class="">b</math-i></math-sub><math-sup><math-i class="">S</math-i><math-i class="">p</math-i></math-sup></math-subsup></math-root>.
+      </p>
+      <p>
+        With a middle bar: not implemented.
       </p>
       <h1>Superscripts and subscripts</h1>
       <p>
-        <math-root><math-subsup><math-base><math-i>A</math-i></math-base><math-sub></math-sub><math-sup><math-i>B</math-i></math-sup></math-subsup><math-subsup><math-base><math-i>C</math-i></math-base><math-sub><math-i>D</math-i></math-sub><math-sup></math-sup></math-subsup></math-root>
+        <math-root><math-subsup><math-base><math-i class="">A</math-i></math-base><math-sub></math-sub><math-sup><math-i class="">B</math-i></math-sup></math-subsup><math-subsup><math-base><math-i class="">C</math-i></math-base><math-sub><math-i class="">D</math-i></math-sub><math-sup></math-sup></math-subsup></math-root>
         or
-        <math-root><math-subsup><math-base><math-i>X</math-i></math-base><math-sub></math-sub><math-sup><math-subsup><math-base><math-i>q</math-i></math-base><math-sub></math-sub><math-sup><math-n>2</math-n></math-sup></math-subsup><math-o class="bin">+</math-o><math-sqrt class="md-sqrt"><math-surd><math-o>√</math-o></math-surd><math-sqrtcont><math-n>2</math-n></math-sqrtcont></math-sqrt><math-i>q</math-i><math-o class="bin">−</math-o><math-n>2</math-n></math-sup></math-subsup><math-o class="bin">∗</math-o><math-subsup><math-base><math-i>Y</math-i></math-base><math-sub><math-subsup><math-base><math-i>d</math-i></math-base><math-sub></math-sub><math-sup><math-n>2</math-n></math-sup></math-subsup><math-o class="bin">+</math-o><math-sqrt class="md-sqrt"><math-surd><math-o>√</math-o></math-surd><math-sqrtcont><math-n>2</math-n></math-sqrtcont></math-sqrt><math-i>d</math-i><math-o class="bin">−</math-o><math-n>2</math-n></math-sub><math-sup></math-sup></math-subsup></math-root>
+        <math-root><math-subsup><math-base><math-i class="">X</math-i></math-base><math-sub></math-sub><math-sup><math-subsup><math-base><math-i class="">q</math-i></math-base><math-sub></math-sub><math-sup><math-n>2</math-n></math-sup></math-subsup><math-o class="bin">+</math-o><math-sqrt class="mod"><math-surd><math-o>√</math-o></math-surd><math-sqrtcont><math-n>2</math-n></math-sqrtcont></math-sqrt><math-i class="">q</math-i><math-o class="bin">−</math-o><math-n>2</math-n></math-sup></math-subsup><math-o class="bin">∗</math-o><math-subsup><math-base><math-i class="">Y</math-i></math-base><math-sub><math-subsup><math-base><math-i class="">d</math-i></math-base><math-sub></math-sub><math-sup><math-n>2</math-n></math-sup></math-subsup><math-o class="bin">+</math-o><math-sqrt class="mod"><math-surd><math-o>√</math-o></math-surd><math-sqrtcont><math-n>2</math-n></math-sqrtcont></math-sqrt><math-i class="">d</math-i><math-o class="bin">−</math-o><math-n>2</math-n></math-sub><math-sup></math-sup></math-subsup></math-root>
         or
-        <math-root><math-subsup><math-base><math-paren class="md-paren md-paren-paren"><math-left><math-o class="lp">(</math-o></math-left><math-parencont><math-n>1</math-n><math-o class="bin">+</math-o><math-frac><math-num><math-n>1</math-n></math-num><math-denwrap><math-line></math-line><math-den><math-n>1</math-n><math-o class="bin">+</math-o><math-frac><math-num><math-i>ξ</math-i></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n></math-den></math-denwrap></math-frac></math-den></math-denwrap></math-frac></math-parencont><math-right><math-o class="rp">)</math-o></math-right></math-paren></math-base><math-sub></math-sub><math-sup><math-n>1</math-n><math-o class="bin">+</math-o><math-frac><math-num><math-n>1</math-n></math-num><math-denwrap><math-line></math-line><math-den><math-subsup><math-base><math-i>ξ</math-i></math-base><math-sub></math-sub><math-sup><math-n>2</math-n></math-sup></math-subsup></math-den></math-denwrap></math-frac></math-sup></math-subsup><math-o class="bin">∗</math-o><math-subsup><math-base><math-paren class="md-paren md-paren-paren"><math-left><math-o class="lp">(</math-o></math-left><math-parencont><math-n>1</math-n><math-o class="bin">+</math-o><math-frac><math-num><math-n>1</math-n><math-o class="bin">+</math-o><math-frac><math-num><math-i>η</math-i></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n></math-den></math-denwrap></math-frac></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n></math-den></math-denwrap></math-frac></math-parencont><math-right><math-o class="rp">)</math-o></math-right></math-paren></math-base><math-sub><math-i>η</math-i><math-o class="bin">+</math-o><math-frac><math-num><math-n>1</math-n></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n></math-den></math-denwrap></math-frac></math-sub><math-sup></math-sup></math-subsup></math-root>.
+        <math-root><math-subsup><math-base><math-paren class="mod left-paren right-paren"><math-left><math-o class="lp">(</math-o></math-left><math-parencont><math-n>1</math-n><math-o class="bin">+</math-o><math-frac><math-num><math-n>1</math-n></math-num><math-denwrap><math-line></math-line><math-den><math-n>1</math-n><math-o class="bin">+</math-o><math-frac><math-num><math-i class="">ξ</math-i></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n></math-den></math-denwrap></math-frac></math-den></math-denwrap></math-frac></math-parencont><math-right><math-o class="rp">)</math-o></math-right></math-paren></math-base><math-sub></math-sub><math-sup><math-n>1</math-n><math-o class="bin">+</math-o><math-frac><math-num><math-n>1</math-n></math-num><math-denwrap><math-line></math-line><math-den><math-subsup><math-base><math-i class="">ξ</math-i></math-base><math-sub></math-sub><math-sup><math-n>2</math-n></math-sup></math-subsup></math-den></math-denwrap></math-frac></math-sup></math-subsup><math-o class="bin">∗</math-o><math-subsup><math-base><math-paren class="mod left-paren right-paren"><math-left><math-o class="lp">(</math-o></math-left><math-parencont><math-n>1</math-n><math-o class="bin">+</math-o><math-frac><math-num><math-n>1</math-n><math-o class="bin">+</math-o><math-frac><math-num><math-i class="">η</math-i></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n></math-den></math-denwrap></math-frac></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n></math-den></math-denwrap></math-frac></math-parencont><math-right><math-o class="rp">)</math-o></math-right></math-paren></math-base><math-sub><math-i class="">η</math-i><math-o class="bin">+</math-o><math-frac><math-num><math-n>1</math-n></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n></math-den></math-denwrap></math-frac></math-sub><math-sup></math-sup></math-subsup></math-root>.
       </p>
       <p>
         Both:
-        <math-root><math-subsup><math-base><math-i>A</math-i></math-base><math-sub><math-i>B</math-i></math-sub><math-sup><math-i>C</math-i></math-sup></math-subsup></math-root>
+        <math-root><math-subsup><math-base><math-i class="">A</math-i></math-base><math-sub><math-i class="">B</math-i></math-sub><math-sup><math-i class="">C</math-i></math-sup></math-subsup></math-root>
         or
-        <math-root><math-subsup><math-base><math-paren class="md-paren md-paren-paren"><math-left><math-o class="lp">(</math-o></math-left><math-parencont><math-n>1</math-n><math-o class="bin">+</math-o><math-frac><math-num><math-n>1</math-n></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n></math-den></math-denwrap></math-frac></math-parencont><math-right><math-o class="rp">)</math-o></math-right></math-paren></math-base><math-sub><math-i>Γ</math-i></math-sub><math-sup><math-i>Δ</math-i></math-sup></math-subsup></math-root>,
+        <math-root><math-subsup><math-base><math-paren class="mod left-paren right-paren"><math-left><math-o class="lp">(</math-o></math-left><math-parencont><math-n>1</math-n><math-o class="bin">+</math-o><math-frac><math-num><math-n>1</math-n></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n></math-den></math-denwrap></math-frac></math-parencont><math-right><math-o class="rp">)</math-o></math-right></math-paren></math-base><math-sub><math-i class="">Γ</math-i></math-sub><math-sup><math-i class="">Δ</math-i></math-sup></math-subsup></math-root>,
         compare
-        <math-root><math-subsup><math-base><math-subsup><math-base><math-i>a</math-i></math-base><math-sub><math-i>k</math-i></math-sub><math-sup></math-sup></math-subsup></math-base><math-sub></math-sub><math-sup><math-i>n</math-i></math-sup></math-subsup></math-root>
-        and
-        <math-root><math-subsup><math-base><math-i>a</math-i></math-base><math-sub><math-i>k</math-i></math-sub><math-sup><math-i>n</math-i></math-sup></math-subsup></math-root>.
+        <math-root><math-subsup><math-base><math-subsup><math-base><math-i class="">a</math-i></math-base><math-sub><math-i class="">k</math-i></math-sub><math-sup></math-sup></math-subsup></math-base><math-sub></math-sub><math-sup><math-i class="">n</math-i></math-sup></math-subsup></math-root>
+        with
+        <math-root><math-subsup><math-base><math-i class="">a</math-i></math-base><math-sub><math-i class="">k</math-i></math-sub><math-sup><math-i class="">n</math-i></math-sup></math-subsup></math-root>.
       </p>
       <p>
         Primes are kinds of superscripts:
-        <math-root><math-subsup><math-base><math-i>A</math-i></math-base><math-sub></math-sub><math-sup><math-o class="ord">󰎘</math-o></math-sup></math-subsup><math-o class="bin">∖</math-o><math-subsup><math-base><math-i>B</math-i></math-base><math-sub></math-sub><math-sup><math-o class="ord">󰎙</math-o></math-sup></math-subsup></math-root>.
+        <math-root><math-subsup><math-base><math-i class="">A</math-i></math-base><math-sub></math-sub><math-sup><math-o class="ord">󰎘</math-o></math-sup></math-subsup><math-o class="bin">∖</math-o><math-subsup><math-base><math-i class="">B</math-i></math-base><math-sub></math-sub><math-sup><math-o class="ord">󰎙</math-o></math-sup></math-subsup></math-root>.
       </p>
       <h1>Integrals</h1>
       <p>
-        <math-root><math-subsup class="int"><math-base><math-o class="int">󰄵</math-o></math-base><math-sub><math-i>A</math-i></math-sub><math-sup><math-i>B</math-i></math-sup></math-subsup><math-i>C</math-i></math-root>
+        <math-root><math-subsup class="int"><math-base><math-o class="int">󰄵</math-o></math-base><math-sub><math-i class="">A</math-i></math-sub><math-sup><math-i class="">B</math-i></math-sup></math-subsup><math-i class="">C</math-i></math-root>
         or
-        <math-root><math-subsup class="int"><math-base><math-o class="int">󰄵</math-o></math-base><math-sub><math-subsup><math-base><math-i>a</math-i></math-base><math-sub></math-sub><math-sup><math-n>3</math-n></math-sup></math-subsup><math-o class="bin">+</math-o><math-n>3</math-n><math-i>a</math-i><math-o class="bin">+</math-o><math-n>1</math-n></math-sub><math-sup><math-subsup><math-base><math-i>a</math-i></math-base><math-sub></math-sub><math-sup><math-n>4</math-n></math-sup></math-subsup><math-o class="bin">−</math-o><math-n>2</math-n></math-sup></math-subsup><math-i>g</math-i><math-o class="lp">(</math-o><math-i>x</math-i><math-o class="rp">)</math-o><math-i>d</math-i><math-i>x</math-i></math-root>.
+        <math-root><math-subsup class="int"><math-base><math-o class="int">󰈩</math-o></math-base><math-sub><math-subsup><math-base><math-i class="">a</math-i></math-base><math-sub></math-sub><math-sup><math-n>3</math-n></math-sup></math-subsup><math-o class="bin">+</math-o><math-n>3</math-n><math-i class="">a</math-i><math-o class="bin">+</math-o><math-n>1</math-n></math-sub><math-sup><math-subsup><math-base><math-i class="">a</math-i></math-base><math-sub></math-sub><math-sup><math-n>4</math-n></math-sup></math-subsup><math-o class="bin">−</math-o><math-n>2</math-n></math-sup></math-subsup><math-i class="">g</math-i><math-o class="lp">(</math-o><math-i class="">x</math-i><math-o class="rp">)</math-o><math-i class="">d</math-i><math-i class="">x</math-i></math-root>.
       </p>
       <h1>Overscripts and underscripts</h1>
       <p>
-        <math-root><math-underover><math-over><math-i>B</math-i></math-over><math-basewrap><math-base><math-i>A</math-i></math-base><math-under></math-under></math-basewrap></math-underover><math-underover><math-over></math-over><math-basewrap><math-base><math-i>C</math-i></math-base><math-under><math-i>D</math-i></math-under></math-basewrap></math-underover></math-root>.
+        <math-root><math-underover><math-over><math-i class="">B</math-i></math-over><math-basewrap><math-base><math-i class="">A</math-i></math-base><math-under></math-under></math-basewrap></math-underover><math-underover><math-over></math-over><math-basewrap><math-base><math-i class="">C</math-i></math-base><math-under><math-i class="">D</math-i></math-under></math-basewrap></math-underover></math-root>.
       </p>
       <p>
         Both:
-        <math-root><math-underover><math-over><math-i>C</math-i></math-over><math-basewrap><math-base><math-i>A</math-i></math-base><math-under><math-i>B</math-i></math-under></math-basewrap></math-underover></math-root>
+        <math-root><math-underover><math-over><math-i class="">C</math-i></math-over><math-basewrap><math-base><math-i class="">A</math-i></math-base><math-under><math-i class="">B</math-i></math-under></math-basewrap></math-underover></math-root>
         or
-        <math-root><math-i>P</math-i><math-underover><math-over><math-subsup><math-base><math-i>n</math-i></math-base><math-sub></math-sub><math-sup><math-n>2</math-n></math-sup></math-subsup><math-o class="bin">−</math-o><math-n>2</math-n><math-i>n</math-i></math-over><math-basewrap><math-base><math-i>X</math-i></math-base><math-under><math-subsup><math-base><math-i>n</math-i></math-base><math-sub></math-sub><math-sup><math-n>2</math-n></math-sup></math-subsup><math-o class="bin">+</math-o><math-n>2</math-n><math-i>n</math-i><math-o class="bin">+</math-o><math-n>1</math-n></math-under></math-basewrap></math-underover><math-i>Q</math-i></math-root>
+        <math-root><math-i class="">P</math-i><math-underover><math-over><math-subsup><math-base><math-i class="">n</math-i></math-base><math-sub></math-sub><math-sup><math-n>2</math-n></math-sup></math-subsup><math-o class="bin">−</math-o><math-n>2</math-n><math-i class="">n</math-i></math-over><math-basewrap><math-base><math-i class="">X</math-i></math-base><math-under><math-subsup><math-base><math-i class="">n</math-i></math-base><math-sub></math-sub><math-sup><math-n>2</math-n></math-sup></math-subsup><math-o class="bin">+</math-o><math-n>2</math-n><math-i class="">n</math-i><math-o class="bin">+</math-o><math-n>1</math-n></math-under></math-basewrap></math-underover><math-i class="">Q</math-i></math-root>
         or
-        <math-root><math-i>U</math-i><math-underover><math-over><math-i>r</math-i><math-o class="bin">+</math-o><math-frac><math-num><math-n>1</math-n></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n></math-den></math-denwrap></math-frac></math-over><math-basewrap><math-base><math-i>Y</math-i></math-base><math-under><math-subsup><math-base><math-o class="ord">ℵ</math-o></math-base><math-sub><math-n>0</math-n></math-sub><math-sup></math-sup></math-subsup></math-under></math-basewrap></math-underover><math-i>V</math-i></math-root>.
+        <math-root><math-i class="">U</math-i><math-underover><math-over><math-i class="">r</math-i><math-o class="bin">+</math-o><math-frac><math-num><math-n>1</math-n></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n></math-den></math-denwrap></math-frac></math-over><math-basewrap><math-base><math-i class="">Y</math-i></math-base><math-under><math-subsup><math-base><math-o class="ord">ℵ</math-o></math-base><math-sub><math-n>0</math-n></math-sub><math-sup></math-sup></math-subsup></math-under></math-basewrap></math-underover><math-i class="">V</math-i></math-root>.
       </p>
       <h1>Sums and products</h1>
       <p>
-        <math-root><math-underover class="sum"><math-over><math-i>B</math-i></math-over><math-basewrap><math-base><math-o class="sum">󰄚</math-o></math-base><math-under><math-i>A</math-i></math-under></math-basewrap></math-underover><math-i>C</math-i></math-root>
+        <math-root><math-underover class="sum"><math-over><math-i class="">B</math-i></math-over><math-basewrap><math-base><math-o class="sum">󰄚</math-o></math-base><math-under><math-i class="">A</math-i></math-under></math-basewrap></math-underover><math-i class="">C</math-i></math-root>
         or more practically
-        <math-root><math-i>ϕ</math-i><math-o class="lp">(</math-o><math-i>x</math-i><math-o class="rp">)</math-o><math-o class="rel">=</math-o><math-underover class="sum"><math-over><math-o class="ord txt">∞</math-o></math-over><math-basewrap><math-base><math-o class="sum">󰄚</math-o></math-base><math-under><math-i>n</math-i><math-o class="rel">=</math-o><math-n>0</math-n></math-under></math-basewrap></math-underover><math-frac><math-num><math-subsup><math-base><math-i>ϕ</math-i></math-base><math-sub></math-sub><math-sup><math-o class="lp">(</math-o><math-i>n</math-i><math-o class="rp">)</math-o></math-sup></math-subsup><math-o class="lp">(</math-o><math-n>0</math-n><math-o class="rp">)</math-o></math-num><math-denwrap><math-line></math-line><math-den><math-i>n</math-i><math-o class="ord txt">!</math-o></math-den></math-denwrap></math-frac><math-subsup><math-base><math-i>x</math-i></math-base><math-sub></math-sub><math-sup><math-i>n</math-i></math-sup></math-subsup></math-root>
+        <math-root><math-i class="">ϕ</math-i><math-o class="lp">(</math-o><math-i class="">x</math-i><math-o class="rp">)</math-o><math-o class="rel">=</math-o><math-underover class="sum"><math-over><math-o class="ord txt">∞</math-o></math-over><math-basewrap><math-base><math-o class="sum">󰄚</math-o></math-base><math-under><math-i class="">n</math-i><math-o class="rel">=</math-o><math-n>0</math-n></math-under></math-basewrap></math-underover><math-frac><math-num><math-subsup><math-base><math-i class="">ϕ</math-i></math-base><math-sub></math-sub><math-sup><math-o class="lp">(</math-o><math-i class="">n</math-i><math-o class="rp">)</math-o></math-sup></math-subsup><math-o class="lp">(</math-o><math-n>0</math-n><math-o class="rp">)</math-o></math-num><math-denwrap><math-line></math-line><math-den><math-i class="">n</math-i><math-o class="ord txt">!</math-o></math-den></math-denwrap></math-frac><math-subsup><math-base><math-i class="">x</math-i></math-base><math-sub></math-sub><math-sup><math-i class="">n</math-i></math-sup></math-subsup></math-root>
         or
-        <math-root><math-underover class="sum"><math-over></math-over><math-basewrap><math-base><math-o class="sum">󰈖</math-o></math-base><math-under><math-i>L</math-i><math-o class="rel">∈</math-o><math-i class=" alt">𝔏</math-i></math-under></math-basewrap></math-underover><math-underover class="sum"><math-over></math-over><math-basewrap><math-base><math-o class="sum">󰈕</math-o></math-base><math-under><math-i>M</math-i><math-o class="rel">∈</math-o><math-i class=" alt">𝔐</math-i></math-under></math-basewrap></math-underover><math-i class=" fun">Hom</math-i><math-o class="lp">(</math-o><math-i>L</math-i><math-o class="del txt">,</math-o><math-i>M</math-i><math-o class="rp">)</math-o></math-root>.
+        <math-root><math-underover class="sum"><math-over></math-over><math-basewrap><math-base><math-o class="sum">󰈖</math-o></math-base><math-under><math-i class="">L</math-i><math-o class="rel">∈</math-o><math-i class="alt">𝔏</math-i></math-under></math-basewrap></math-underover><math-underover class="sum"><math-over></math-over><math-basewrap><math-base><math-o class="sum">󰈕</math-o></math-base><math-under><math-i class="">M</math-i><math-o class="rel">∈</math-o><math-i class="alt">𝔐</math-i></math-under></math-basewrap></math-underover><math-i class="fun">Hom</math-i><math-o class="lp">(</math-o><math-i class="">L</math-i><math-o class="del txt">,</math-o><math-i class="">M</math-i><math-o class="rp">)</math-o></math-root>.
       </p>
       <h1>Accents</h1>
       <p>
-        <math-root><math-underover class="acc"><math-over><math-o class="acc">˙</math-o></math-over><math-basewrap><math-base><math-i>A</math-i></math-base><math-under></math-under></math-basewrap></math-underover></math-root>, <math-root><math-underover class="acc"><math-over><math-o class="acc">ˆ</math-o></math-over><math-basewrap><math-base><math-i>B</math-i></math-base><math-under></math-under></math-basewrap></math-underover></math-root>, <math-root><math-underover class="acc"><math-over><math-o class="acc">˜</math-o></math-over><math-basewrap><math-base><math-i>c</math-i></math-base><math-under></math-under></math-basewrap></math-underover></math-root>, <math-root><math-underover class="acc"><math-over><math-o class="acc">˚</math-o></math-over><math-basewrap><math-base><math-i>d</math-i></math-base><math-under></math-under></math-basewrap></math-underover></math-root>, <math-root><math-underover class="acc"><math-over></math-over><math-basewrap><math-base><math-i>E</math-i></math-base><math-under><math-o class="acc">˙</math-o></math-under></math-basewrap></math-underover></math-root>, <math-root><math-underover class="acc"><math-over></math-over><math-basewrap><math-base><math-i>F</math-i></math-base><math-under><math-o class="acc">ˆ</math-o></math-under></math-basewrap></math-underover></math-root>, <math-root><math-underover class="acc"><math-over></math-over><math-basewrap><math-base><math-i>g</math-i></math-base><math-under><math-o class="acc">˜</math-o></math-under></math-basewrap></math-underover></math-root>, <math-root><math-underover class="acc"><math-over></math-over><math-basewrap><math-base><math-i>h</math-i></math-base><math-under><math-o class="acc">˚</math-o></math-under></math-basewrap></math-underover></math-root>.
+        <math-root><math-underover class="acc"><math-over><math-o class="acc">˙</math-o></math-over><math-basewrap><math-base><math-i class="">A</math-i></math-base><math-under></math-under></math-basewrap></math-underover></math-root>, <math-root><math-underover class="acc"><math-over><math-o class="acc">ˆ</math-o></math-over><math-basewrap><math-base><math-i class="">B</math-i></math-base><math-under></math-under></math-basewrap></math-underover></math-root>, <math-root><math-underover class="acc"><math-over><math-o class="acc">˜</math-o></math-over><math-basewrap><math-base><math-i class="">c</math-i></math-base><math-under></math-under></math-basewrap></math-underover></math-root>, <math-root><math-underover class="acc"><math-over><math-o class="acc">˚</math-o></math-over><math-basewrap><math-base><math-i class="">d</math-i></math-base><math-under></math-under></math-basewrap></math-underover></math-root>, <math-root><math-underover class="acc"><math-over></math-over><math-basewrap><math-base><math-i class="">E</math-i></math-base><math-under><math-o class="acc">˙</math-o></math-under></math-basewrap></math-underover></math-root>, <math-root><math-underover class="acc"><math-over></math-over><math-basewrap><math-base><math-i class="">F</math-i></math-base><math-under><math-o class="acc">ˆ</math-o></math-under></math-basewrap></math-underover></math-root>, <math-root><math-underover class="acc"><math-over></math-over><math-basewrap><math-base><math-i class="">g</math-i></math-base><math-under><math-o class="acc">˜</math-o></math-under></math-basewrap></math-underover></math-root>, <math-root><math-underover class="acc"><math-over></math-over><math-basewrap><math-base><math-i class="">h</math-i></math-base><math-under><math-o class="acc">˚</math-o></math-under></math-basewrap></math-underover></math-root>.
       </p>
       <p>
         Wide: not implemented.
@@ -808,67 +470,95 @@ window.onload = execute;</script>
       </p>
       <h1>Matrices</h1>
       <p>
-        <math-root><math-paren class="md-paren md-paren-paren"><math-left><math-o class="lp">(</math-o></math-left><math-parencont><math-table class="mat"><math-row><math-cell><math-n>1</math-n></math-cell><math-cell><math-n>2</math-n></math-cell></math-row><math-row><math-cell><math-n>3</math-n></math-cell><math-cell><math-n>4</math-n></math-cell></math-row></math-table></math-parencont><math-right><math-o class="rp">)</math-o></math-right></math-paren></math-root>,
-        <math-root><math-paren class="md-paren md-paren-vert"><math-left><math-o class="lp">|</math-o></math-left><math-parencont><math-table class="mat"><math-row><math-cell><math-subsup><math-base><math-i>a</math-i></math-base><math-sub><math-n>1</math-n><math-n>1</math-n></math-sub><math-sup></math-sup></math-subsup></math-cell><math-cell><math-subsup><math-base><math-i>a</math-i></math-base><math-sub><math-n>1</math-n><math-n>2</math-n></math-sub><math-sup></math-sup></math-subsup></math-cell><math-cell><math-subsup><math-base><math-i>a</math-i></math-base><math-sub><math-n>1</math-n><math-n>3</math-n></math-sub><math-sup></math-sup></math-subsup></math-cell><math-cell><math-subsup><math-base><math-i>a</math-i></math-base><math-sub><math-n>1</math-n><math-n>4</math-n></math-sub><math-sup></math-sup></math-subsup></math-cell><math-cell><math-subsup><math-base><math-i>a</math-i></math-base><math-sub><math-n>1</math-n><math-n>5</math-n></math-sub><math-sup></math-sup></math-subsup></math-cell></math-row><math-row><math-cell><math-subsup><math-base><math-i>a</math-i></math-base><math-sub><math-n>2</math-n><math-n>1</math-n></math-sub><math-sup></math-sup></math-subsup></math-cell><math-cell><math-subsup><math-base><math-i>a</math-i></math-base><math-sub><math-n>2</math-n><math-n>2</math-n></math-sub><math-sup></math-sup></math-subsup></math-cell><math-cell><math-subsup><math-base><math-i>a</math-i></math-base><math-sub><math-n>2</math-n><math-n>3</math-n></math-sub><math-sup></math-sup></math-subsup></math-cell><math-cell><math-subsup><math-base><math-i>a</math-i></math-base><math-sub><math-n>2</math-n><math-n>4</math-n></math-sub><math-sup></math-sup></math-subsup></math-cell><math-cell><math-subsup><math-base><math-i>a</math-i></math-base><math-sub><math-n>2</math-n><math-n>5</math-n></math-sub><math-sup></math-sup></math-subsup></math-cell></math-row><math-row><math-cell><math-subsup><math-base><math-i>a</math-i></math-base><math-sub><math-n>3</math-n><math-n>1</math-n></math-sub><math-sup></math-sup></math-subsup></math-cell><math-cell><math-subsup><math-base><math-i>a</math-i></math-base><math-sub><math-n>3</math-n><math-n>2</math-n></math-sub><math-sup></math-sup></math-subsup></math-cell><math-cell><math-subsup><math-base><math-i>a</math-i></math-base><math-sub><math-n>3</math-n><math-n>3</math-n></math-sub><math-sup></math-sup></math-subsup></math-cell><math-cell><math-subsup><math-base><math-i>a</math-i></math-base><math-sub><math-n>3</math-n><math-n>4</math-n></math-sub><math-sup></math-sup></math-subsup></math-cell><math-cell><math-subsup><math-base><math-i>a</math-i></math-base><math-sub><math-n>3</math-n><math-n>5</math-n></math-sub><math-sup></math-sup></math-subsup></math-cell></math-row><math-row><math-cell><math-subsup><math-base><math-i>a</math-i></math-base><math-sub><math-n>4</math-n><math-n>1</math-n></math-sub><math-sup></math-sup></math-subsup></math-cell><math-cell><math-subsup><math-base><math-i>a</math-i></math-base><math-sub><math-n>4</math-n><math-n>2</math-n></math-sub><math-sup></math-sup></math-subsup></math-cell><math-cell><math-subsup><math-base><math-i>a</math-i></math-base><math-sub><math-n>4</math-n><math-n>3</math-n></math-sub><math-sup></math-sup></math-subsup></math-cell><math-cell><math-subsup><math-base><math-i>a</math-i></math-base><math-sub><math-n>4</math-n><math-n>4</math-n></math-sub><math-sup></math-sup></math-subsup></math-cell><math-cell><math-subsup><math-base><math-i>a</math-i></math-base><math-sub><math-n>4</math-n><math-n>5</math-n></math-sub><math-sup></math-sup></math-subsup></math-cell></math-row></math-table></math-parencont><math-right><math-o class="rp">|</math-o></math-right></math-paren></math-root>
+        <math-root><math-paren class="mod left-paren right-paren"><math-left><math-o class="lp">(</math-o></math-left><math-parencont><math-table class="matrix"><math-cell style="grid-row: 1; grid-column: 1;"><math-n>1</math-n></math-cell><math-cell style="grid-row: 1; grid-column: 2;"><math-n>2</math-n></math-cell><math-cell style="grid-row: 2; grid-column: 1;"><math-n>3</math-n></math-cell><math-cell style="grid-row: 2; grid-column: 2;"><math-n>4</math-n></math-cell></math-table></math-parencont><math-right><math-o class="rp">)</math-o></math-right></math-paren></math-root>,
+        <math-root><math-paren class="mod left-vert right-vert"><math-left><math-o class="lp">|</math-o></math-left><math-parencont><math-table class="matrix"><math-cell style="grid-row: 1; grid-column: 1;"><math-subsup><math-base><math-i class="">a</math-i></math-base><math-sub><math-n>1</math-n><math-n>1</math-n></math-sub><math-sup></math-sup></math-subsup></math-cell><math-cell style="grid-row: 1; grid-column: 2;"><math-subsup><math-base><math-i class="">a</math-i></math-base><math-sub><math-n>1</math-n><math-n>2</math-n></math-sub><math-sup></math-sup></math-subsup></math-cell><math-cell style="grid-row: 1; grid-column: 3;"><math-subsup><math-base><math-i class="">a</math-i></math-base><math-sub><math-n>1</math-n><math-n>3</math-n></math-sub><math-sup></math-sup></math-subsup></math-cell><math-cell style="grid-row: 1; grid-column: 4;"><math-subsup><math-base><math-i class="">a</math-i></math-base><math-sub><math-n>1</math-n><math-n>4</math-n></math-sub><math-sup></math-sup></math-subsup></math-cell><math-cell style="grid-row: 1; grid-column: 5;"><math-subsup><math-base><math-i class="">a</math-i></math-base><math-sub><math-n>1</math-n><math-n>5</math-n></math-sub><math-sup></math-sup></math-subsup></math-cell><math-cell style="grid-row: 2; grid-column: 1;"><math-subsup><math-base><math-i class="">a</math-i></math-base><math-sub><math-n>2</math-n><math-n>1</math-n></math-sub><math-sup></math-sup></math-subsup></math-cell><math-cell style="grid-row: 2; grid-column: 2;"><math-subsup><math-base><math-i class="">a</math-i></math-base><math-sub><math-n>2</math-n><math-n>2</math-n></math-sub><math-sup></math-sup></math-subsup></math-cell><math-cell style="grid-row: 2; grid-column: 3;"><math-subsup><math-base><math-i class="">a</math-i></math-base><math-sub><math-n>2</math-n><math-n>3</math-n></math-sub><math-sup></math-sup></math-subsup></math-cell><math-cell style="grid-row: 2; grid-column: 4;"><math-subsup><math-base><math-i class="">a</math-i></math-base><math-sub><math-n>2</math-n><math-n>4</math-n></math-sub><math-sup></math-sup></math-subsup></math-cell><math-cell style="grid-row: 2; grid-column: 5;"><math-subsup><math-base><math-i class="">a</math-i></math-base><math-sub><math-n>2</math-n><math-n>5</math-n></math-sub><math-sup></math-sup></math-subsup></math-cell><math-cell style="grid-row: 3; grid-column: 1;"><math-subsup><math-base><math-i class="">a</math-i></math-base><math-sub><math-n>3</math-n><math-n>1</math-n></math-sub><math-sup></math-sup></math-subsup></math-cell><math-cell style="grid-row: 3; grid-column: 2;"><math-subsup><math-base><math-i class="">a</math-i></math-base><math-sub><math-n>3</math-n><math-n>2</math-n></math-sub><math-sup></math-sup></math-subsup></math-cell><math-cell style="grid-row: 3; grid-column: 3;"><math-subsup><math-base><math-i class="">a</math-i></math-base><math-sub><math-n>3</math-n><math-n>3</math-n></math-sub><math-sup></math-sup></math-subsup></math-cell><math-cell style="grid-row: 3; grid-column: 4;"><math-subsup><math-base><math-i class="">a</math-i></math-base><math-sub><math-n>3</math-n><math-n>4</math-n></math-sub><math-sup></math-sup></math-subsup></math-cell><math-cell style="grid-row: 3; grid-column: 5;"><math-subsup><math-base><math-i class="">a</math-i></math-base><math-sub><math-n>3</math-n><math-n>5</math-n></math-sub><math-sup></math-sup></math-subsup></math-cell><math-cell style="grid-row: 4; grid-column: 1;"><math-subsup><math-base><math-i class="">a</math-i></math-base><math-sub><math-n>4</math-n><math-n>1</math-n></math-sub><math-sup></math-sup></math-subsup></math-cell><math-cell style="grid-row: 4; grid-column: 2;"><math-subsup><math-base><math-i class="">a</math-i></math-base><math-sub><math-n>4</math-n><math-n>2</math-n></math-sub><math-sup></math-sup></math-subsup></math-cell><math-cell style="grid-row: 4; grid-column: 3;"><math-subsup><math-base><math-i class="">a</math-i></math-base><math-sub><math-n>4</math-n><math-n>3</math-n></math-sub><math-sup></math-sup></math-subsup></math-cell><math-cell style="grid-row: 4; grid-column: 4;"><math-subsup><math-base><math-i class="">a</math-i></math-base><math-sub><math-n>4</math-n><math-n>4</math-n></math-sub><math-sup></math-sup></math-subsup></math-cell><math-cell style="grid-row: 4; grid-column: 5;"><math-subsup><math-base><math-i class="">a</math-i></math-base><math-sub><math-n>4</math-n><math-n>5</math-n></math-sub><math-sup></math-sup></math-subsup></math-cell></math-table></math-parencont><math-right><math-o class="rp">|</math-o></math-right></math-paren></math-root>
         or
-        <math-root><math-subsup><math-base><math-i>V</math-i></math-base><math-sub><math-i>n</math-i></math-sub><math-sup></math-sup></math-subsup><math-o class="rel">:=</math-o><math-i class=" fun">det</math-i><math-paren class="md-paren md-paren-paren"><math-left><math-o class="lp">(</math-o></math-left><math-parencont><math-table class="mat"><math-row><math-cell><math-n>1</math-n></math-cell><math-cell><math-subsup><math-base><math-i>X</math-i></math-base><math-sub><math-n>1</math-n></math-sub><math-sup></math-sup></math-subsup></math-cell><math-cell><math-subsup><math-base><math-subsup><math-base><math-i>X</math-i></math-base><math-sub><math-n>1</math-n></math-sub><math-sup></math-sup></math-subsup></math-base><math-sub></math-sub><math-sup><math-n>2</math-n></math-sup></math-subsup></math-cell><math-cell><math-o class="ord">⋯</math-o></math-cell><math-cell><math-subsup><math-base><math-subsup><math-base><math-i>X</math-i></math-base><math-sub><math-n>1</math-n></math-sub><math-sup></math-sup></math-subsup></math-base><math-sub></math-sub><math-sup><math-i>n</math-i><math-o class="bin">−</math-o><math-n>1</math-n></math-sup></math-subsup></math-cell></math-row><math-row><math-cell><math-n>1</math-n></math-cell><math-cell><math-subsup><math-base><math-i>X</math-i></math-base><math-sub><math-n>2</math-n></math-sub><math-sup></math-sup></math-subsup></math-cell><math-cell><math-subsup><math-base><math-subsup><math-base><math-i>X</math-i></math-base><math-sub><math-n>2</math-n></math-sub><math-sup></math-sup></math-subsup></math-base><math-sub></math-sub><math-sup><math-n>2</math-n></math-sup></math-subsup></math-cell><math-cell><math-o class="ord">⋯</math-o></math-cell><math-cell><math-subsup><math-base><math-subsup><math-base><math-i>X</math-i></math-base><math-sub><math-n>2</math-n></math-sub><math-sup></math-sup></math-subsup></math-base><math-sub></math-sub><math-sup><math-i>n</math-i><math-o class="bin">−</math-o><math-n>1</math-n></math-sup></math-subsup></math-cell></math-row><math-row><math-cell><math-o class="ord">⋮</math-o></math-cell><math-cell><math-o class="ord">⋮</math-o></math-cell><math-cell><math-o class="ord">⋮</math-o></math-cell><math-cell><math-o class="ord">⋱</math-o></math-cell><math-cell><math-o class="ord">⋮</math-o></math-cell></math-row><math-row><math-cell><math-n>1</math-n></math-cell><math-cell><math-subsup><math-base><math-i>X</math-i></math-base><math-sub><math-i>n</math-i></math-sub><math-sup></math-sup></math-subsup></math-cell><math-cell><math-subsup><math-base><math-subsup><math-base><math-i>X</math-i></math-base><math-sub><math-i>n</math-i></math-sub><math-sup></math-sup></math-subsup></math-base><math-sub></math-sub><math-sup><math-n>2</math-n></math-sup></math-subsup></math-cell><math-cell><math-o class="ord">⋯</math-o></math-cell><math-cell><math-subsup><math-base><math-subsup><math-base><math-i>X</math-i></math-base><math-sub><math-i>n</math-i></math-sub><math-sup></math-sup></math-subsup></math-base><math-sub></math-sub><math-sup><math-i>n</math-i><math-o class="bin">−</math-o><math-n>1</math-n></math-sup></math-subsup></math-cell></math-row></math-table></math-parencont><math-right><math-o class="rp">)</math-o></math-right></math-paren><math-o class="rel">=</math-o><math-underover class="sum"><math-over></math-over><math-basewrap><math-base><math-o class="sum">󰄖</math-o></math-base><math-under><math-n>1</math-n><math-o class="rel">≤</math-o><math-i>i</math-i><math-o class="rel">&lt;</math-o><math-i>j</math-i><math-o class="rel">≤</math-o><math-i>n</math-i></math-under></math-basewrap></math-underover><math-o class="lp">(</math-o><math-subsup><math-base><math-i>X</math-i></math-base><math-sub><math-i>j</math-i></math-sub><math-sup></math-sup></math-subsup><math-o class="bin">−</math-o><math-subsup><math-base><math-i>X</math-i></math-base><math-sub><math-i>i</math-i></math-sub><math-sup></math-sup></math-subsup><math-o class="rp">)</math-o></math-root>.
+        <math-root><math-subsup><math-base><math-i class="">V</math-i></math-base><math-sub><math-i class="">n</math-i></math-sub><math-sup></math-sup></math-subsup><math-o class="rel">:=</math-o><math-i class="fun">det</math-i><math-paren class="mod left-paren right-paren"><math-left><math-o class="lp">(</math-o></math-left><math-parencont><math-table class="matrix"><math-cell style="grid-row: 1; grid-column: 1;"><math-n>1</math-n></math-cell><math-cell style="grid-row: 1; grid-column: 2;"><math-subsup><math-base><math-i class="">X</math-i></math-base><math-sub><math-n>1</math-n></math-sub><math-sup></math-sup></math-subsup></math-cell><math-cell style="grid-row: 1; grid-column: 3;"><math-subsup><math-base><math-subsup><math-base><math-i class="">X</math-i></math-base><math-sub><math-n>1</math-n></math-sub><math-sup></math-sup></math-subsup></math-base><math-sub></math-sub><math-sup><math-n>2</math-n></math-sup></math-subsup></math-cell><math-cell style="grid-row: 1; grid-column: 4;"><math-o class="ord">⋯</math-o></math-cell><math-cell style="grid-row: 1; grid-column: 5;"><math-subsup><math-base><math-subsup><math-base><math-i class="">X</math-i></math-base><math-sub><math-n>1</math-n></math-sub><math-sup></math-sup></math-subsup></math-base><math-sub></math-sub><math-sup><math-i class="">n</math-i><math-o class="bin">−</math-o><math-n>1</math-n></math-sup></math-subsup></math-cell><math-cell style="grid-row: 2; grid-column: 1;"><math-n>1</math-n></math-cell><math-cell style="grid-row: 2; grid-column: 2;"><math-subsup><math-base><math-i class="">X</math-i></math-base><math-sub><math-n>2</math-n></math-sub><math-sup></math-sup></math-subsup></math-cell><math-cell style="grid-row: 2; grid-column: 3;"><math-subsup><math-base><math-subsup><math-base><math-i class="">X</math-i></math-base><math-sub><math-n>2</math-n></math-sub><math-sup></math-sup></math-subsup></math-base><math-sub></math-sub><math-sup><math-n>2</math-n></math-sup></math-subsup></math-cell><math-cell style="grid-row: 2; grid-column: 4;"><math-o class="ord">⋯</math-o></math-cell><math-cell style="grid-row: 2; grid-column: 5;"><math-subsup><math-base><math-subsup><math-base><math-i class="">X</math-i></math-base><math-sub><math-n>2</math-n></math-sub><math-sup></math-sup></math-subsup></math-base><math-sub></math-sub><math-sup><math-i class="">n</math-i><math-o class="bin">−</math-o><math-n>1</math-n></math-sup></math-subsup></math-cell><math-cell style="grid-row: 3; grid-column: 1;"><math-o class="ord">⋮</math-o></math-cell><math-cell style="grid-row: 3; grid-column: 2;"><math-o class="ord">⋮</math-o></math-cell><math-cell style="grid-row: 3; grid-column: 3;"><math-o class="ord">⋮</math-o></math-cell><math-cell style="grid-row: 3; grid-column: 4;"><math-o class="ord">⋱</math-o></math-cell><math-cell style="grid-row: 3; grid-column: 5;"><math-o class="ord">⋮</math-o></math-cell><math-cell style="grid-row: 4; grid-column: 1;"><math-n>1</math-n></math-cell><math-cell style="grid-row: 4; grid-column: 2;"><math-subsup><math-base><math-i class="">X</math-i></math-base><math-sub><math-i class="">n</math-i></math-sub><math-sup></math-sup></math-subsup></math-cell><math-cell style="grid-row: 4; grid-column: 3;"><math-subsup><math-base><math-subsup><math-base><math-i class="">X</math-i></math-base><math-sub><math-i class="">n</math-i></math-sub><math-sup></math-sup></math-subsup></math-base><math-sub></math-sub><math-sup><math-n>2</math-n></math-sup></math-subsup></math-cell><math-cell style="grid-row: 4; grid-column: 4;"><math-o class="ord">⋯</math-o></math-cell><math-cell style="grid-row: 4; grid-column: 5;"><math-subsup><math-base><math-subsup><math-base><math-i class="">X</math-i></math-base><math-sub><math-i class="">n</math-i></math-sub><math-sup></math-sup></math-subsup></math-base><math-sub></math-sub><math-sup><math-i class="">n</math-i><math-o class="bin">−</math-o><math-n>1</math-n></math-sup></math-subsup></math-cell></math-table></math-parencont><math-right><math-o class="rp">)</math-o></math-right></math-paren><math-o class="rel">=</math-o><math-underover class="sum"><math-over></math-over><math-basewrap><math-base><math-o class="sum">󰄖</math-o></math-base><math-under><math-n>1</math-n><math-o class="rel">≤</math-o><math-i class="">i</math-i><math-o class="rel">&lt;</math-o><math-i class="">j</math-i><math-o class="rel">≤</math-o><math-i class="">n</math-i></math-under></math-basewrap></math-underover><math-o class="lp">(</math-o><math-subsup><math-base><math-i class="">X</math-i></math-base><math-sub><math-i class="">j</math-i></math-sub><math-sup></math-sup></math-subsup><math-o class="bin">−</math-o><math-subsup><math-base><math-i class="">X</math-i></math-base><math-sub><math-i class="">i</math-i></math-sub><math-sup></math-sup></math-subsup><math-o class="rp">)</math-o></math-root>.
       </p>
-      <h1>Tables</h1>
+      <h1>Arrays</h1>
       <p>
-        To be implemented.
+        <math-root><math-table class="array"><math-cell class="raw" style="grid-row: 1; grid-column: 1;"><math-i class="">Φ</math-i><math-o class="del txt">:</math-o></math-cell><math-cell class="raw" style="grid-row: 1; grid-column: 2;"><math-i class="">V</math-i><math-o class="bin">⊗</math-o><math-i class="">W</math-i></math-cell><math-cell class="raw" style="grid-row: 1; grid-column: 3;"><math-o class="rel">⟶</math-o></math-cell><math-cell class="raw" style="grid-row: 1; grid-column: 4;"><math-i class="alt">𝕂</math-i></math-cell><math-cell class="raw" style="grid-row: 2; grid-column: 1;"></math-cell><math-cell class="raw" style="grid-row: 2; grid-column: 2;"><math-i class="">v</math-i><math-o class="bin">⊗</math-o><math-i class="">w</math-i></math-cell><math-cell class="raw" style="grid-row: 2; grid-column: 3;"><math-o class="rel">⟼</math-o></math-cell><math-cell class="raw" style="grid-row: 2; grid-column: 4;"><math-i class="">f</math-i><math-o class="lp">(</math-o><math-i class="">v</math-i><math-o class="rp">)</math-o><math-i class="">g</math-i><math-o class="lp">(</math-o><math-i class="">w</math-i><math-o class="rp">)</math-o></math-cell></math-table></math-root>
+        or
+        <math-root><math-table class="array"><math-cell class="raw" style="grid-row: 1; grid-column: 1;text-align: right"><math-o class="ord">∇</math-o><math-o class="bin">·</math-o><math-style class="bold"><math-i class="">B</math-i></math-style></math-cell><math-cell class="raw" style="grid-row: 1; grid-column: 2;text-align: center"><math-o class="rel">=</math-o></math-cell><math-cell class="raw" style="grid-row: 1; grid-column: 3;text-align: left"><math-n>0</math-n></math-cell><math-cell class="raw" style="grid-row: 2; grid-column: 1;text-align: right"><math-o class="ord">∇</math-o><math-o class="bin">×</math-o><math-style class="bold"><math-i class="">E</math-i></math-style><math-o class="bin">+</math-o><math-frac><math-num><math-o class="ord txt">∂</math-o><math-style class="bold"><math-i class="">B</math-i></math-style></math-num><math-denwrap><math-line></math-line><math-den><math-o class="ord txt">∂</math-o><math-i class="">t</math-i></math-den></math-denwrap></math-frac></math-cell><math-cell class="raw" style="grid-row: 2; grid-column: 2;text-align: center"><math-o class="rel">=</math-o></math-cell><math-cell class="raw" style="grid-row: 2; grid-column: 3;text-align: left"><math-style class="bold"><math-n>0</math-n></math-style></math-cell><math-cell class="raw" style="grid-row: 3; grid-column: 1;text-align: right"><math-o class="ord">∇</math-o><math-o class="bin">·</math-o><math-style class="bold"><math-i class="">D</math-i></math-style></math-cell><math-cell class="raw" style="grid-row: 3; grid-column: 2;text-align: center"><math-o class="rel">=</math-o></math-cell><math-cell class="raw" style="grid-row: 3; grid-column: 3;text-align: left"><math-i class="">ρ</math-i></math-cell><math-cell class="raw" style="grid-row: 4; grid-column: 1;text-align: right"><math-o class="ord">∇</math-o><math-o class="bin">×</math-o><math-style class="bold"><math-i class="">H</math-i></math-style><math-o class="bin">−</math-o><math-frac><math-num><math-o class="ord txt">∂</math-o><math-style class="bold"><math-i class="">D</math-i></math-style></math-num><math-denwrap><math-line></math-line><math-den><math-o class="ord txt">∂</math-o><math-i class="">t</math-i></math-den></math-denwrap></math-frac></math-cell><math-cell class="raw" style="grid-row: 4; grid-column: 2;text-align: center"><math-o class="rel">=</math-o></math-cell><math-cell class="raw" style="grid-row: 4; grid-column: 3;text-align: left"><math-style class="bold"><math-i class="">j</math-i></math-style></math-cell></math-table></math-root>
+      </p>
+      <p>
+        Cases:
+        <math-root><math-paren class="mod left-vert right-vert"><math-left><math-o class="lp">|</math-o></math-left><math-parencont><math-i class="">x</math-i></math-parencont><math-right><math-o class="rp">|</math-o></math-right></math-paren><math-o class="rel">=</math-o><math-paren class="mod left-brace right-none"><math-left><math-o class="lp">{</math-o></math-left><math-parencont><math-table class="case"><math-cell style="grid-row: 1; grid-column: 1;text-align: left"><math-i class="">x</math-i></math-cell><math-cell style="grid-row: 1; grid-column: 2;text-align: left"><math-o class="lp">(</math-o><math-i class="">x</math-i><math-o class="rel">≥</math-o><math-n>0</math-n><math-o class="rp">)</math-o></math-cell><math-cell style="grid-row: 2; grid-column: 1;text-align: left"><math-o class="bin">−</math-o><math-i class="">x</math-i></math-cell><math-cell style="grid-row: 2; grid-column: 2;text-align: left"><math-o class="lp">(</math-o><math-i class="">x</math-i><math-o class="rel">&lt;</math-o><math-n>0</math-n><math-o class="rp">)</math-o></math-cell></math-table></math-parencont><math-right><math-o class="rp"></math-o></math-right></math-paren></math-root>
       </p>
       <h1>Functions</h1>
       <p>
-        <math-root><math-i class=" fun">sin</math-i><math-i>A</math-i></math-root>
+        <math-root><math-i class="fun">sin</math-i><math-i class="">A</math-i></math-root>
         or
-        <math-root><math-i class=" fun">exp</math-i><math-o class="lp">(</math-o><math-i>a</math-i><math-o class="bin">−</math-o><math-i>b</math-i><math-o class="rp">)</math-o><math-o class="rel">=</math-o><math-frac><math-num><math-i class=" fun">exp</math-i><math-i>a</math-i></math-num><math-denwrap><math-line></math-line><math-den><math-i class=" fun">exp</math-i><math-i>b</math-i></math-den></math-denwrap></math-frac></math-root>
+        <math-root><math-i class="fun">exp</math-i><math-o class="lp">(</math-o><math-i class="">a</math-i><math-o class="bin">−</math-o><math-i class="">b</math-i><math-o class="rp">)</math-o><math-o class="rel">=</math-o><math-frac><math-num><math-i class="fun">exp</math-i><math-i class="">a</math-i></math-num><math-denwrap><math-line></math-line><math-den><math-i class="fun">exp</math-i><math-i class="">b</math-i></math-den></math-denwrap></math-frac></math-root>
         or
-        <math-root><math-i class=" fun">max</math-i><math-o class="lp">{</math-o><math-i class=" fun">dim</math-i><math-i>V</math-i><math-o class="rel">∣</math-o><math-i>V</math-i><math-o class="rel">∈</math-o><math-i class=" fun">Hoge</math-i><math-o class="lp">(</math-o><math-i class=" alt">󰒭</math-i><math-o class="rp">)</math-o><math-o class="rp">}</math-o></math-root>.
+        <math-root><math-i class="fun">max</math-i><math-o class="lp">{</math-o><math-i class="fun">dim</math-i><math-i class="">V</math-i><math-o class="rel">∣</math-o><math-i class="">V</math-i><math-o class="rel">∈</math-o><math-i class="fun">Hoge</math-i><math-o class="lp">(</math-o><math-i class="alt">󰒭</math-i><math-o class="rp">)</math-o><math-o class="rp">}</math-o></math-root>.
       </p>
       <h1>Alternative letters</h1>
       <p>
-        <math-root><math-i class=" alt">𝔸𝕒</math-i><math-o class="bin">∗</math-o><math-i class=" alt">󰒙𝒷</math-i><math-o class="bin">∗</math-o><math-i class=" alt">ℭ𝔠</math-i></math-root>
+        <math-root><math-i class="alt">𝔸𝕒</math-i><math-o class="bin">∗</math-o><math-i class="alt">ℬ𝒷</math-i><math-o class="bin">∗</math-o><math-i class="alt">󰒚𝒸</math-i><math-o class="bin">∗</math-o><math-i class="alt">𝔇𝔡</math-i></math-root>
         or
-        <math-root><math-i>σ</math-i><math-o class="rel">∉</math-o><math-i class=" alt">𝔤𝔩</math-i><math-o class="lp">(</math-o><math-subsup><math-base><math-i class=" alt">𝔖</math-i></math-base><math-sub><math-i>n</math-i></math-sub><math-sup></math-sup></math-subsup><math-o class="rp">)</math-o></math-root>
+        <math-root><math-i class="">σ</math-i><math-o class="rel">∉</math-o><math-i class="alt">𝔤𝔩</math-i><math-o class="lp">(</math-o><math-subsup><math-base><math-i class="alt">𝔖</math-i></math-base><math-sub><math-i class="">n</math-i></math-sub><math-sup></math-sup></math-subsup><math-o class="rp">)</math-o></math-root>
         or
-        <math-root><math-i>τ</math-i><math-o class="rel">∈</math-o><math-subsup><math-base><math-i class=" alt">󰒞</math-i></math-base><math-sub></math-sub><math-sup><math-i class=" alt">󰒝</math-i></math-sup></math-subsup><math-o class="del txt">:</math-o><math-i>T</math-i><math-o class="rel">⇒</math-o><math-i>S</math-i></math-root>.
+        <math-root><math-i class="">τ</math-i><math-o class="rel">∈</math-o><math-subsup><math-base><math-i class="alt">󰒞</math-i></math-base><math-sub></math-sub><math-sup><math-i class="alt">󰒝</math-i></math-sup></math-subsup><math-o class="del txt">:</math-o><math-i class="">T</math-i><math-o class="rel">⇒</math-o><math-i class="">S</math-i></math-root>.
       </p>
       <h1>Miscellaneous</h1>
       <p>
-        Greek variants: <math-root><math-o class="lp">(</math-o><math-i>ϐ</math-i><math-o class="del txt">,</math-o><math-i>β</math-i><math-o class="rp">)</math-o><math-o class="bin">∗</math-o><math-o class="lp">(</math-o><math-i>ϵ</math-i><math-o class="del txt">,</math-o><math-i>ε</math-i><math-o class="rp">)</math-o><math-o class="bin">∗</math-o><math-o class="lp">(</math-o><math-i>ϑ</math-i><math-o class="del txt">,</math-o><math-i>θ</math-i><math-o class="rp">)</math-o><math-o class="bin">∗</math-o><math-o class="lp">(</math-o><math-i>ϰ</math-i><math-o class="del txt">,</math-o><math-i>κ</math-i><math-o class="rp">)</math-o><math-o class="bin">∗</math-o><math-o class="lp">(</math-o><math-i>ϖ</math-i><math-o class="del txt">,</math-o><math-i>π</math-i><math-o class="rp">)</math-o><math-o class="bin">∗</math-o><math-o class="lp">(</math-o><math-i>ϱ</math-i><math-o class="del txt">,</math-o><math-i>ρ</math-i><math-o class="rp">)</math-o><math-o class="bin">∗</math-o><math-o class="lp">(</math-o><math-i>ϕ</math-i><math-o class="del txt">,</math-o><math-i>φ</math-i><math-o class="rp">)</math-o><math-o class="bin">∗</math-o><math-o class="lp">(</math-o><math-i>ϒ</math-i><math-o class="del txt">,</math-o><math-i>Υ</math-i><math-o class="rp">)</math-o></math-root>.
+        Greek variants: <math-root><math-o class="lp">(</math-o><math-i class="">ϐ</math-i><math-o class="del txt">,</math-o><math-i class="">β</math-i><math-o class="rp">)</math-o><math-o class="bin">∗</math-o><math-o class="lp">(</math-o><math-i class="">ϵ</math-i><math-o class="del txt">,</math-o><math-i class="">ε</math-i><math-o class="rp">)</math-o><math-o class="bin">∗</math-o><math-o class="lp">(</math-o><math-i class="">ϑ</math-i><math-o class="del txt">,</math-o><math-i class="">θ</math-i><math-o class="rp">)</math-o><math-o class="bin">∗</math-o><math-o class="lp">(</math-o><math-i class="">ϰ</math-i><math-o class="del txt">,</math-o><math-i class="">κ</math-i><math-o class="rp">)</math-o><math-o class="bin">∗</math-o><math-o class="lp">(</math-o><math-i class="">ϖ</math-i><math-o class="del txt">,</math-o><math-i class="">π</math-i><math-o class="rp">)</math-o><math-o class="bin">∗</math-o><math-o class="lp">(</math-o><math-i class="">ϱ</math-i><math-o class="del txt">,</math-o><math-i class="">ρ</math-i><math-o class="rp">)</math-o><math-o class="bin">∗</math-o><math-o class="lp">(</math-o><math-i class="">ϕ</math-i><math-o class="del txt">,</math-o><math-i class="">φ</math-i><math-o class="rp">)</math-o><math-o class="bin">∗</math-o><math-o class="lp">(</math-o><math-i class="">ϒ</math-i><math-o class="del txt">,</math-o><math-i class="">Υ</math-i><math-o class="rp">)</math-o></math-root>.
       </p>
       <p>
-        Archaic greek letters: <math-root><math-i>ϝ</math-i><math-o class="bin">∗</math-o><math-i>ϙ</math-i><math-o class="bin">∗</math-o><math-i>ϡ</math-i></math-root>.
+        Archaic greek letters: <math-root><math-o class="lp">(</math-o><math-i class="">Ϝ</math-i><math-o class="del txt">,</math-o><math-i class="">ϝ</math-i><math-o class="rp">)</math-o><math-o class="bin">∗</math-o><math-o class="lp">(</math-o><math-i class="">Ϙ</math-i><math-o class="del txt">,</math-o><math-i class="">ϙ</math-i><math-o class="rp">)</math-o><math-o class="bin">∗</math-o><math-o class="lp">(</math-o><math-i class="">Ϡ</math-i><math-o class="del txt">,</math-o><math-i class="">ϡ</math-i><math-o class="rp">)</math-o></math-root>.
       </p>
-      <h1>Some practical example</h1>
+      <p>
+        Symbols: <math-root><math-o class="ord txt">ℏ</math-o><math-o class="bin">∗</math-o><math-o class="ord">♯</math-o><math-o class="ord">♭</math-o><math-o class="bin">∗</math-o><math-o class="ord">♩</math-o><math-o class="ord">♪</math-o><math-o class="bin">∗</math-o><math-o class="ord">♠</math-o><math-o class="ord">♡</math-o><math-o class="bin">∗</math-o><math-o class="ord txt">†</math-o><math-o class="bin">∗</math-o><math-o class="ord txt">&amp;</math-o><math-o class="ord txt">⅋</math-o></math-root>.
+      </p>
+      <p>
+        Combining negation symbol: <math-root><math-i class="">A</math-i><math-o class="rel">≪</math-o><math-o class="not"≯</math-o><math-i class="">B</math-i></math-root>.
+      </p>
+      <p>
+        Texts as subformulae: <math-root><math-o class="lp">{</math-o><math-i class="">x</math-i><math-o class="rel">∈</math-o><math-i class="">X</math-i><math-o class="rel">∣</math-o><math-i class="">x</math-i><math-text> is very good</math-text><math-o class="rp">}</math-o></math-root> or <math-root><math-o class="lp">{</math-o><math-i class="">x</math-i><math-o class="rel">∈</math-o><math-i class="">X</math-i><math-o class="rel">∣</math-o><math-root><math-i class="">x</math-i></math-root> is very good<math-o class="rp">}</math-o></math-root>.
+      </p>
+      <h1>Commutative diagrams</h1>
+      <p>
+        To be implemented.
+      </p>
+      <h1>Some practical examples</h1>
       <p class="normal">
-        The quadratic equation <math-root><math-i>a</math-i><math-subsup><math-base><math-i>x</math-i></math-base><math-sub></math-sub><math-sup><math-n>2</math-n></math-sup></math-subsup><math-o class="bin">+</math-o><math-i>b</math-i><math-i>x</math-i><math-o class="bin">+</math-o><math-i>c</math-i><math-o class="rel">=</math-o><math-n>0</math-n></math-root> has real roots when <math-root><math-i>D</math-i><math-o class="rel">:=</math-o><math-subsup><math-base><math-i>b</math-i></math-base><math-sub></math-sub><math-sup><math-n>2</math-n></math-sup></math-subsup><math-o class="bin">−</math-o><math-n>4</math-n><math-i>a</math-i><math-i>c</math-i><math-o class="rel">≥</math-o><math-n>0</math-n></math-root> holds, and those roots are explicitly written as
-        <span class="display-math"><math-root><math-i>x</math-i><math-o class="rel">=</math-o><math-frac><math-num><math-o class="bin">−</math-o><math-i>b</math-i><math-o class="bin">±</math-o><math-sqrt class="md-sqrt"><math-surd><math-o>√</math-o></math-surd><math-sqrtcont><math-subsup><math-base><math-i>b</math-i></math-base><math-sub></math-sub><math-sup><math-n>2</math-n></math-sup></math-subsup><math-o class="bin">−</math-o><math-n>4</math-n><math-i>a</math-i><math-i>c</math-i></math-sqrtcont></math-sqrt></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n><math-i>a</math-i></math-den></math-denwrap></math-frac></math-root></span>
-        Otherwise <math-root><math-i>D</math-i><math-o class="rel">&lt;</math-o><math-n>0</math-n></math-root>, in which case the equation does not have real roots but two distinct imaginary roots.
+        The quadratic equation <math-root><math-i class="">a</math-i><math-subsup><math-base><math-i class="">x</math-i></math-base><math-sub></math-sub><math-sup><math-n>2</math-n></math-sup></math-subsup><math-o class="bin">+</math-o><math-i class="">b</math-i><math-i class="">x</math-i><math-o class="bin">+</math-o><math-i class="">c</math-i><math-o class="rel">=</math-o><math-n>0</math-n></math-root> has two real roots when <math-root><math-i class="">D</math-i><math-o class="rel">:=</math-o><math-subsup><math-base><math-i class="">b</math-i></math-base><math-sub></math-sub><math-sup><math-n>2</math-n></math-sup></math-subsup><math-o class="bin">−</math-o><math-n>4</math-n><math-i class="">a</math-i><math-i class="">c</math-i><math-o class="rel">&gt;</math-o><math-n>0</math-n></math-root> holds, and those roots are explicitly written as
+        <span class="display-math"><math-root><math-i class="">x</math-i><math-o class="rel">=</math-o><math-frac><math-num><math-o class="bin">−</math-o><math-i class="">b</math-i><math-o class="bin">±</math-o><math-sqrt class="mod"><math-surd><math-o>√</math-o></math-surd><math-sqrtcont><math-subsup><math-base><math-i class="">b</math-i></math-base><math-sub></math-sub><math-sup><math-n>2</math-n></math-sup></math-subsup><math-o class="bin">−</math-o><math-n>4</math-n><math-i class="">a</math-i><math-i class="">c</math-i></math-sqrtcont></math-sqrt></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n><math-i class="">a</math-i></math-den></math-denwrap></math-frac><math-o class="ord txt">.</math-o></math-root></span>
+        The proof is quite easy.
+        The left-hand side of the equation is transformed as:
+        <span class="display-math"><math-root><math-table class="array"><math-cell class="raw" style="grid-row: 1; grid-column: 1;text-align: right"><math-i class="">a</math-i><math-subsup><math-base><math-i class="">x</math-i></math-base><math-sub></math-sub><math-sup><math-n>2</math-n></math-sup></math-subsup><math-o class="bin">+</math-o><math-i class="">b</math-i><math-i class="">x</math-i><math-o class="bin">+</math-o><math-i class="">c</math-i></math-cell><math-cell class="raw" style="grid-row: 1; grid-column: 2;text-align: center"><math-o class="rel">=</math-o></math-cell><math-cell class="raw" style="grid-row: 1; grid-column: 3;text-align: left"><math-i class="">a</math-i><math-paren class="mod left-paren right-paren"><math-left><math-o class="lp">(</math-o></math-left><math-parencont><math-subsup><math-base><math-i class="">x</math-i></math-base><math-sub></math-sub><math-sup><math-n>2</math-n></math-sup></math-subsup><math-o class="bin">+</math-o><math-frac><math-num><math-i class="">b</math-i></math-num><math-denwrap><math-line></math-line><math-den><math-i class="">a</math-i></math-den></math-denwrap></math-frac><math-i class="">x</math-i></math-parencont><math-right><math-o class="rp">)</math-o></math-right></math-paren><math-o class="bin">+</math-o><math-i class="">c</math-i></math-cell><math-cell class="raw" style="grid-row: 2; grid-column: 1;text-align: right"></math-cell><math-cell class="raw" style="grid-row: 2; grid-column: 2;text-align: center"><math-o class="rel">=</math-o></math-cell><math-cell class="raw" style="grid-row: 2; grid-column: 3;text-align: left"><math-i class="">a</math-i><math-paren class="mod left-paren right-paren"><math-left><math-o class="lp">(</math-o></math-left><math-parencont><math-subsup><math-base><math-paren class="mod left-paren right-paren"><math-left><math-o class="lp">(</math-o></math-left><math-parencont><math-i class="">x</math-i><math-o class="bin">+</math-o><math-frac><math-num><math-i class="">b</math-i></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n><math-i class="">a</math-i></math-den></math-denwrap></math-frac></math-parencont><math-right><math-o class="rp">)</math-o></math-right></math-paren></math-base><math-sub></math-sub><math-sup><math-n>2</math-n></math-sup></math-subsup><math-o class="bin">−</math-o><math-subsup><math-base><math-paren class="mod left-paren right-paren"><math-left><math-o class="lp">(</math-o></math-left><math-parencont><math-frac><math-num><math-i class="">b</math-i></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n><math-i class="">a</math-i></math-den></math-denwrap></math-frac></math-parencont><math-right><math-o class="rp">)</math-o></math-right></math-paren></math-base><math-sub></math-sub><math-sup><math-n>2</math-n></math-sup></math-subsup></math-parencont><math-right><math-o class="rp">)</math-o></math-right></math-paren><math-o class="bin">+</math-o><math-i class="">c</math-i></math-cell><math-cell class="raw" style="grid-row: 3; grid-column: 1;text-align: right"></math-cell><math-cell class="raw" style="grid-row: 3; grid-column: 2;text-align: center"><math-o class="rel">=</math-o></math-cell><math-cell class="raw" style="grid-row: 3; grid-column: 3;text-align: left"><math-i class="">a</math-i><math-subsup><math-base><math-paren class="mod left-paren right-paren"><math-left><math-o class="lp">(</math-o></math-left><math-parencont><math-i class="">x</math-i><math-o class="bin">+</math-o><math-frac><math-num><math-i class="">b</math-i></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n><math-i class="">a</math-i></math-den></math-denwrap></math-frac></math-parencont><math-right><math-o class="rp">)</math-o></math-right></math-paren></math-base><math-sub></math-sub><math-sup><math-n>2</math-n></math-sup></math-subsup><math-o class="bin">−</math-o><math-frac><math-num><math-subsup><math-base><math-i class="">b</math-i></math-base><math-sub></math-sub><math-sup><math-n>2</math-n></math-sup></math-subsup></math-num><math-denwrap><math-line></math-line><math-den><math-n>4</math-n><math-i class="">a</math-i></math-den></math-denwrap></math-frac><math-o class="bin">+</math-o><math-i class="">c</math-i></math-cell><math-cell class="raw" style="grid-row: 4; grid-column: 1;text-align: right"></math-cell><math-cell class="raw" style="grid-row: 4; grid-column: 2;text-align: center"><math-o class="rel">=</math-o></math-cell><math-cell class="raw" style="grid-row: 4; grid-column: 3;text-align: left"><math-i class="">a</math-i><math-subsup><math-base><math-paren class="mod left-paren right-paren"><math-left><math-o class="lp">(</math-o></math-left><math-parencont><math-i class="">x</math-i><math-o class="bin">+</math-o><math-frac><math-num><math-i class="">b</math-i></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n><math-i class="">a</math-i></math-den></math-denwrap></math-frac></math-parencont><math-right><math-o class="rp">)</math-o></math-right></math-paren></math-base><math-sub></math-sub><math-sup><math-n>2</math-n></math-sup></math-subsup><math-o class="bin">−</math-o><math-frac><math-num><math-subsup><math-base><math-i class="">b</math-i></math-base><math-sub></math-sub><math-sup><math-n>2</math-n></math-sup></math-subsup><math-o class="bin">−</math-o><math-n>4</math-n><math-i class="">a</math-i><math-i class="">c</math-i></math-num><math-denwrap><math-line></math-line><math-den><math-n>4</math-n><math-i class="">a</math-i></math-den></math-denwrap></math-frac><math-o class="ord txt">.</math-o></math-cell></math-table></math-root></span>
+        Thus the equation is equivalent to
+        <span class="display-math"><math-root><math-i class="">a</math-i><math-subsup><math-base><math-paren class="mod left-paren right-paren"><math-left><math-o class="lp">(</math-o></math-left><math-parencont><math-i class="">x</math-i><math-o class="bin">+</math-o><math-frac><math-num><math-i class="">b</math-i></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n><math-i class="">a</math-i></math-den></math-denwrap></math-frac></math-parencont><math-right><math-o class="rp">)</math-o></math-right></math-paren></math-base><math-sub></math-sub><math-sup><math-n>2</math-n></math-sup></math-subsup><math-o class="bin">−</math-o><math-frac><math-num><math-subsup><math-base><math-i class="">b</math-i></math-base><math-sub></math-sub><math-sup><math-n>2</math-n></math-sup></math-subsup><math-o class="bin">−</math-o><math-n>4</math-n><math-i class="">a</math-i><math-i class="">c</math-i></math-num><math-denwrap><math-line></math-line><math-den><math-n>4</math-n><math-i class="">a</math-i></math-den></math-denwrap></math-frac><math-o class="rel">=</math-o><math-n>0</math-n><math-o class="del txt">,</math-o></math-root></span>
+        and also equivalent to
+        <span class="display-math"><math-root><math-subsup><math-base><math-paren class="mod left-paren right-paren"><math-left><math-o class="lp">(</math-o></math-left><math-parencont><math-i class="">x</math-i><math-o class="bin">+</math-o><math-frac><math-num><math-i class="">b</math-i></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n><math-i class="">a</math-i></math-den></math-denwrap></math-frac></math-parencont><math-right><math-o class="rp">)</math-o></math-right></math-paren></math-base><math-sub></math-sub><math-sup><math-n>2</math-n></math-sup></math-subsup><math-o class="rel">=</math-o><math-frac><math-num><math-subsup><math-base><math-i class="">b</math-i></math-base><math-sub></math-sub><math-sup><math-n>2</math-n></math-sup></math-subsup><math-o class="bin">−</math-o><math-n>4</math-n><math-i class="">a</math-i><math-i class="">c</math-i></math-num><math-denwrap><math-line></math-line><math-den><math-n>4</math-n><math-subsup><math-base><math-i class="">a</math-i></math-base><math-sub></math-sub><math-sup><math-n>2</math-n></math-sup></math-subsup></math-den></math-denwrap></math-frac><math-o class="ord txt">.</math-o></math-root></span>
+        Taking the square roots of both sides yields
+        <span class="display-math"><math-root><math-i class="">x</math-i><math-o class="bin">+</math-o><math-frac><math-num><math-i class="">b</math-i></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n><math-i class="">a</math-i></math-den></math-denwrap></math-frac><math-o class="rel">=</math-o><math-frac><math-num><math-o class="bin">±</math-o><math-sqrt class="mod"><math-surd><math-o>√</math-o></math-surd><math-sqrtcont><math-subsup><math-base><math-i class="">b</math-i></math-base><math-sub></math-sub><math-sup><math-n>2</math-n></math-sup></math-subsup><math-o class="bin">−</math-o><math-n>4</math-n><math-i class="">a</math-i><math-i class="">c</math-i></math-sqrtcont></math-sqrt></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n><math-i class="">a</math-i></math-den></math-denwrap></math-frac><math-o class="ord txt">.</math-o></math-root></span>
+        Transposing <math-root><math-i class="">b</math-i><math-o class="ord txt">/</math-o><math-n>2</math-n><math-i class="">a</math-i></math-root> to the left finally gives the desired formula.
       </p>
       <p class="normal">
-        主イデアル整域 <math-root><math-i>A</math-i></math-root> 上の多項式 <math-root><math-i>P</math-i><math-o class="rel">∈</math-o><math-i>A</math-i><math-o class="lp">[</math-o><math-i>X</math-i><math-o class="rp">]</math-o></math-root> を考え、 
-        <span class="display-math"><math-root><math-i>P</math-i><math-o class="rel">=:</math-o><math-subsup><math-base><math-i>X</math-i></math-base><math-sub></math-sub><math-sup><math-i>n</math-i></math-sup></math-subsup><math-o class="bin">+</math-o><math-subsup><math-base><math-i>a</math-i></math-base><math-sub><math-n>1</math-n></math-sub><math-sup></math-sup></math-subsup><math-subsup><math-base><math-i>X</math-i></math-base><math-sub></math-sub><math-sup><math-i>n</math-i><math-o class="bin">−</math-o><math-n>1</math-n></math-sup></math-subsup><math-o class="bin">+</math-o><math-o class="ord">⋯</math-o><math-o class="bin">+</math-o><math-subsup><math-base><math-i>a</math-i></math-base><math-sub><math-i>n</math-i></math-sub><math-sup></math-sup></math-subsup></math-root></span>
+        主イデアル整域 <math-root><math-i class="">A</math-i></math-root> 上の多項式 <math-root><math-i class="">P</math-i><math-o class="rel">∈</math-o><math-i class="">A</math-i><math-o class="lp">[</math-o><math-i class="">X</math-i><math-o class="rp">]</math-o></math-root> を考え、 
+        <span class="display-math"><math-root><math-i class="">P</math-i><math-o class="rel">=:</math-o><math-subsup><math-base><math-i class="">X</math-i></math-base><math-sub></math-sub><math-sup><math-i class="">n</math-i></math-sup></math-subsup><math-o class="bin">+</math-o><math-subsup><math-base><math-i class="">a</math-i></math-base><math-sub><math-n>1</math-n></math-sub><math-sup></math-sup></math-subsup><math-subsup><math-base><math-i class="">X</math-i></math-base><math-sub></math-sub><math-sup><math-i class="">n</math-i><math-o class="bin">−</math-o><math-n>1</math-n></math-sup></math-subsup><math-o class="bin">+</math-o><math-o class="ord">⋯</math-o><math-o class="bin">+</math-o><math-subsup><math-base><math-i class="">a</math-i></math-base><math-sub><math-i class="">n</math-i></math-sub><math-sup></math-sup></math-subsup></math-root></span>
         と係数表示する。 
-        <math-root><math-i>A</math-i></math-root> のある素元 <math-root><math-i>π</math-i></math-root> が存在し、 各 <math-root><math-i>i</math-i><math-o class="rel">=</math-o><math-n>1</math-n><math-o class="del txt">,</math-o><math-o class="ord">⋯</math-o><math-o class="del txt">,</math-o><math-i>n</math-i><math-o class="bin">−</math-o><math-n>1</math-n></math-root> に対して <math-root><math-i>π</math-i></math-root> は <math-root><math-subsup><math-base><math-i>a</math-i></math-base><math-sub><math-i>i</math-i></math-sub><math-sup></math-sup></math-subsup></math-root> をわり切り、 さらに <math-root><math-subsup><math-base><math-i>π</math-i></math-base><math-sub></math-sub><math-sup><math-n>2</math-n></math-sup></math-subsup></math-root> は <math-root><math-subsup><math-base><math-i>a</math-i></math-base><math-sub><math-i>n</math-i></math-sub><math-sup></math-sup></math-subsup></math-root> をわり切らないとする。 
-        このとき、 <math-root><math-i>K</math-i><math-o class="rel">:=</math-o><math-i class=" fun">Frac</math-i><math-o class="lp">(</math-o><math-i>A</math-i><math-o class="rp">)</math-o></math-root> とおくと、 <math-root><math-i>P</math-i></math-root> は <math-root><math-i>K</math-i></math-root> 上既約である。 
+        <math-root><math-i class="">A</math-i></math-root> のある素元 <math-root><math-i class="">π</math-i></math-root> が存在し、 各 <math-root><math-i class="">i</math-i><math-o class="rel">=</math-o><math-n>1</math-n><math-o class="del txt">,</math-o><math-o class="ord">⋯</math-o><math-o class="del txt">,</math-o><math-i class="">n</math-i><math-o class="bin">−</math-o><math-n>1</math-n></math-root> に対して <math-root><math-i class="">π</math-i></math-root> は <math-root><math-subsup><math-base><math-i class="">a</math-i></math-base><math-sub><math-i class="">i</math-i></math-sub><math-sup></math-sup></math-subsup></math-root> をわり切り、 さらに <math-root><math-subsup><math-base><math-i class="">π</math-i></math-base><math-sub></math-sub><math-sup><math-n>2</math-n></math-sup></math-subsup></math-root> は <math-root><math-subsup><math-base><math-i class="">a</math-i></math-base><math-sub><math-i class="">n</math-i></math-sub><math-sup></math-sup></math-subsup></math-root> をわり切らないとする。 
+        このとき、 <math-root><math-i class="">K</math-i><math-o class="rel">:=</math-o><math-i class="fun">Frac</math-i><math-o class="lp">(</math-o><math-i class="">A</math-i><math-o class="rp">)</math-o></math-root> とおくと、 <math-root><math-i class="">P</math-i></math-root> は <math-root><math-i class="">K</math-i></math-root> 上既約である。 
       </p>
       <p class="normal">
-        2 階連続的微分可能な <math-root><math-i class=" alt">ℝ</math-i></math-root> 値 2 変数関数 <math-root><math-i>f</math-i><math-o class="lp">(</math-o><math-i>x</math-i><math-o class="del txt">,</math-o><math-i>y</math-i><math-o class="rp">)</math-o></math-root> の極大値や極小値が知りたいとする。 
-        点 <math-root><math-o class="lp">(</math-o><math-subsup><math-base><math-i>x</math-i></math-base><math-sub><math-n>0</math-n></math-sub><math-sup></math-sup></math-subsup><math-o class="del txt">,</math-o><math-subsup><math-base><math-i>y</math-i></math-base><math-sub><math-n>0</math-n></math-sub><math-sup></math-sup></math-subsup><math-o class="rp">)</math-o></math-root> が極大値もしくは極小値であるための必要条件として、 その点が停留点であること、 すなわち
-        <span class="display-math"><math-root><math-frac><math-num><math-o class="ord txt">∂</math-o><math-i>f</math-i></math-num><math-denwrap><math-line></math-line><math-den><math-o class="ord txt">∂</math-o><math-i>x</math-i></math-den></math-denwrap></math-frac><math-o class="lp">(</math-o><math-subsup><math-base><math-i>x</math-i></math-base><math-sub><math-n>0</math-n></math-sub><math-sup></math-sup></math-subsup><math-o class="del txt">,</math-o><math-subsup><math-base><math-i>y</math-i></math-base><math-sub><math-n>0</math-n></math-sub><math-sup></math-sup></math-subsup><math-o class="rp">)</math-o><math-o class="rel">=</math-o><math-frac><math-num><math-o class="ord txt">∂</math-o><math-i>f</math-i></math-num><math-denwrap><math-line></math-line><math-den><math-o class="ord txt">∂</math-o><math-i>y</math-i></math-den></math-denwrap></math-frac><math-o class="lp">(</math-o><math-subsup><math-base><math-i>x</math-i></math-base><math-sub><math-n>0</math-n></math-sub><math-sup></math-sup></math-subsup><math-o class="del txt">,</math-o><math-subsup><math-base><math-i>y</math-i></math-base><math-sub><math-n>0</math-n></math-sub><math-sup></math-sup></math-subsup><math-o class="rp">)</math-o><math-o class="rel">=</math-o><math-n>0</math-n></math-root></span>
+        2 階連続的微分可能な <math-root><math-i class="alt">ℝ</math-i></math-root> 値 2 変数関数 <math-root><math-i class="">f</math-i><math-o class="lp">(</math-o><math-i class="">x</math-i><math-o class="del txt">,</math-o><math-i class="">y</math-i><math-o class="rp">)</math-o></math-root> の極大値や極小値が知りたいとする。 
+        点 <math-root><math-o class="lp">(</math-o><math-subsup><math-base><math-i class="">x</math-i></math-base><math-sub><math-n>0</math-n></math-sub><math-sup></math-sup></math-subsup><math-o class="del txt">,</math-o><math-subsup><math-base><math-i class="">y</math-i></math-base><math-sub><math-n>0</math-n></math-sub><math-sup></math-sup></math-subsup><math-o class="rp">)</math-o></math-root> が極大値もしくは極小値であるための必要条件として、 その点が停留点であること、 すなわち
+        <span class="display-math"><math-root><math-frac><math-num><math-o class="ord txt">∂</math-o><math-i class="">f</math-i></math-num><math-denwrap><math-line></math-line><math-den><math-o class="ord txt">∂</math-o><math-i class="">x</math-i></math-den></math-denwrap></math-frac><math-o class="lp">(</math-o><math-subsup><math-base><math-i class="">x</math-i></math-base><math-sub><math-n>0</math-n></math-sub><math-sup></math-sup></math-subsup><math-o class="del txt">,</math-o><math-subsup><math-base><math-i class="">y</math-i></math-base><math-sub><math-n>0</math-n></math-sub><math-sup></math-sup></math-subsup><math-o class="rp">)</math-o><math-o class="rel">=</math-o><math-frac><math-num><math-o class="ord txt">∂</math-o><math-i class="">f</math-i></math-num><math-denwrap><math-line></math-line><math-den><math-o class="ord txt">∂</math-o><math-i class="">y</math-i></math-den></math-denwrap></math-frac><math-o class="lp">(</math-o><math-subsup><math-base><math-i class="">x</math-i></math-base><math-sub><math-n>0</math-n></math-sub><math-sup></math-sup></math-subsup><math-o class="del txt">,</math-o><math-subsup><math-base><math-i class="">y</math-i></math-base><math-sub><math-n>0</math-n></math-sub><math-sup></math-sup></math-subsup><math-o class="rp">)</math-o><math-o class="rel">=</math-o><math-n>0</math-n></math-root></span>
         が成り立つことが挙げられる。 
-        この条件のもと、 Taylor 展開を行うことで、 <math-root><math-i>f</math-i></math-root> の点 <math-root><math-o class="lp">(</math-o><math-i>x</math-i><math-o class="del txt">,</math-o><math-i>y</math-i><math-o class="rp">)</math-o></math-root> の周りでの振る舞いは、 
-        <span class="display-math"><math-root><math-i>f</math-i><math-o class="lp">(</math-o><math-subsup><math-base><math-i>x</math-i></math-base><math-sub><math-n>0</math-n></math-sub><math-sup></math-sup></math-subsup><math-o class="bin">+</math-o><math-i>h</math-i><math-o class="del txt">,</math-o><math-subsup><math-base><math-i>y</math-i></math-base><math-sub><math-n>0</math-n></math-sub><math-sup></math-sup></math-subsup><math-o class="bin">+</math-o><math-i>k</math-i><math-o class="rp">)</math-o><math-o class="rel">=</math-o><math-i>f</math-i><math-o class="lp">(</math-o><math-subsup><math-base><math-i>x</math-i></math-base><math-sub><math-n>0</math-n></math-sub><math-sup></math-sup></math-subsup><math-o class="del txt">,</math-o><math-subsup><math-base><math-i>y</math-i></math-base><math-sub><math-n>0</math-n></math-sub><math-sup></math-sup></math-subsup><math-o class="rp">)</math-o><math-o class="bin">+</math-o><math-frac><math-num><math-n>1</math-n></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n></math-den></math-denwrap></math-frac><math-paren class="md-paren md-paren-paren"><math-left><math-o class="lp">(</math-o></math-left><math-parencont><math-subsup><math-base><math-i>h</math-i></math-base><math-sub></math-sub><math-sup><math-n>2</math-n></math-sup></math-subsup><math-frac><math-num><math-subsup><math-base><math-o class="ord txt">∂</math-o></math-base><math-sub></math-sub><math-sup><math-n>2</math-n></math-sup></math-subsup><math-i>f</math-i></math-num><math-denwrap><math-line></math-line><math-den><math-o class="ord txt">∂</math-o><math-subsup><math-base><math-i>x</math-i></math-base><math-sub></math-sub><math-sup><math-n>2</math-n></math-sup></math-subsup></math-den></math-denwrap></math-frac><math-o class="lp">(</math-o><math-subsup><math-base><math-i>x</math-i></math-base><math-sub><math-n>0</math-n></math-sub><math-sup></math-sup></math-subsup><math-o class="del txt">,</math-o><math-subsup><math-base><math-i>y</math-i></math-base><math-sub><math-n>0</math-n></math-sub><math-sup></math-sup></math-subsup><math-o class="rp">)</math-o><math-o class="bin">+</math-o><math-n>2</math-n><math-i>h</math-i><math-i>k</math-i><math-frac><math-num><math-subsup><math-base><math-o class="ord txt">∂</math-o></math-base><math-sub></math-sub><math-sup><math-n>2</math-n></math-sup></math-subsup><math-i>f</math-i></math-num><math-denwrap><math-line></math-line><math-den><math-o class="ord txt">∂</math-o><math-i>x</math-i><math-o class="ord txt">∂</math-o><math-i>y</math-i></math-den></math-denwrap></math-frac><math-o class="lp">(</math-o><math-subsup><math-base><math-i>x</math-i></math-base><math-sub><math-n>0</math-n></math-sub><math-sup></math-sup></math-subsup><math-o class="del txt">,</math-o><math-subsup><math-base><math-i>y</math-i></math-base><math-sub><math-n>0</math-n></math-sub><math-sup></math-sup></math-subsup><math-o class="rp">)</math-o><math-o class="bin">+</math-o><math-subsup><math-base><math-i>k</math-i></math-base><math-sub></math-sub><math-sup><math-n>2</math-n></math-sup></math-subsup><math-frac><math-num><math-subsup><math-base><math-o class="ord txt">∂</math-o></math-base><math-sub></math-sub><math-sup><math-n>2</math-n></math-sup></math-subsup><math-i>f</math-i></math-num><math-denwrap><math-line></math-line><math-den><math-o class="ord txt">∂</math-o><math-subsup><math-base><math-i>y</math-i></math-base><math-sub></math-sub><math-sup><math-n>2</math-n></math-sup></math-subsup></math-den></math-denwrap></math-frac><math-o class="lp">(</math-o><math-subsup><math-base><math-i>x</math-i></math-base><math-sub><math-n>0</math-n></math-sub><math-sup></math-sup></math-subsup><math-o class="del txt">,</math-o><math-subsup><math-base><math-i>y</math-i></math-base><math-sub><math-n>0</math-n></math-sub><math-sup></math-sup></math-subsup><math-o class="rp">)</math-o></math-parencont><math-right><math-o class="rp">)</math-o></math-right></math-paren><math-o class="bin">+</math-o><math-i>o</math-i><math-o class="lp">(</math-o><math-subsup><math-base><math-i>ρ</math-i></math-base><math-sub></math-sub><math-sup><math-n>2</math-n></math-sup></math-subsup><math-o class="rp">)</math-o></math-root></span>
+        この条件のもと、 Taylor 展開を行うことで、 <math-root><math-i class="">f</math-i></math-root> の点 <math-root><math-o class="lp">(</math-o><math-subsup><math-base><math-i class="">x</math-i></math-base><math-sub><math-n>0</math-n></math-sub><math-sup></math-sup></math-subsup><math-o class="del txt">,</math-o><math-subsup><math-base><math-i class="">y</math-i></math-base><math-sub><math-n>0</math-n></math-sub><math-sup></math-sup></math-subsup><math-o class="rp">)</math-o></math-root> の周りでの振る舞いは、 
+        <span class="display-math"><math-root><math-i class="">f</math-i><math-o class="lp">(</math-o><math-subsup><math-base><math-i class="">x</math-i></math-base><math-sub><math-n>0</math-n></math-sub><math-sup></math-sup></math-subsup><math-o class="bin">+</math-o><math-i class="">h</math-i><math-o class="del txt">,</math-o><math-subsup><math-base><math-i class="">y</math-i></math-base><math-sub><math-n>0</math-n></math-sub><math-sup></math-sup></math-subsup><math-o class="bin">+</math-o><math-i class="">k</math-i><math-o class="rp">)</math-o><math-o class="rel">=</math-o><math-i class="">f</math-i><math-o class="lp">(</math-o><math-subsup><math-base><math-i class="">x</math-i></math-base><math-sub><math-n>0</math-n></math-sub><math-sup></math-sup></math-subsup><math-o class="del txt">,</math-o><math-subsup><math-base><math-i class="">y</math-i></math-base><math-sub><math-n>0</math-n></math-sub><math-sup></math-sup></math-subsup><math-o class="rp">)</math-o><math-o class="bin">+</math-o><math-frac><math-num><math-n>1</math-n></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n></math-den></math-denwrap></math-frac><math-paren class="mod left-paren right-paren"><math-left><math-o class="lp">(</math-o></math-left><math-parencont><math-subsup><math-base><math-i class="">h</math-i></math-base><math-sub></math-sub><math-sup><math-n>2</math-n></math-sup></math-subsup><math-frac><math-num><math-subsup><math-base><math-o class="ord txt">∂</math-o></math-base><math-sub></math-sub><math-sup><math-n>2</math-n></math-sup></math-subsup><math-i class="">f</math-i></math-num><math-denwrap><math-line></math-line><math-den><math-o class="ord txt">∂</math-o><math-subsup><math-base><math-i class="">x</math-i></math-base><math-sub></math-sub><math-sup><math-n>2</math-n></math-sup></math-subsup></math-den></math-denwrap></math-frac><math-o class="lp">(</math-o><math-subsup><math-base><math-i class="">x</math-i></math-base><math-sub><math-n>0</math-n></math-sub><math-sup></math-sup></math-subsup><math-o class="del txt">,</math-o><math-subsup><math-base><math-i class="">y</math-i></math-base><math-sub><math-n>0</math-n></math-sub><math-sup></math-sup></math-subsup><math-o class="rp">)</math-o><math-o class="bin">+</math-o><math-n>2</math-n><math-i class="">h</math-i><math-i class="">k</math-i><math-frac><math-num><math-subsup><math-base><math-o class="ord txt">∂</math-o></math-base><math-sub></math-sub><math-sup><math-n>2</math-n></math-sup></math-subsup><math-i class="">f</math-i></math-num><math-denwrap><math-line></math-line><math-den><math-o class="ord txt">∂</math-o><math-i class="">x</math-i><math-o class="ord txt">∂</math-o><math-i class="">y</math-i></math-den></math-denwrap></math-frac><math-o class="lp">(</math-o><math-subsup><math-base><math-i class="">x</math-i></math-base><math-sub><math-n>0</math-n></math-sub><math-sup></math-sup></math-subsup><math-o class="del txt">,</math-o><math-subsup><math-base><math-i class="">y</math-i></math-base><math-sub><math-n>0</math-n></math-sub><math-sup></math-sup></math-subsup><math-o class="rp">)</math-o><math-o class="bin">+</math-o><math-subsup><math-base><math-i class="">k</math-i></math-base><math-sub></math-sub><math-sup><math-n>2</math-n></math-sup></math-subsup><math-frac><math-num><math-subsup><math-base><math-o class="ord txt">∂</math-o></math-base><math-sub></math-sub><math-sup><math-n>2</math-n></math-sup></math-subsup><math-i class="">f</math-i></math-num><math-denwrap><math-line></math-line><math-den><math-o class="ord txt">∂</math-o><math-subsup><math-base><math-i class="">y</math-i></math-base><math-sub></math-sub><math-sup><math-n>2</math-n></math-sup></math-subsup></math-den></math-denwrap></math-frac><math-o class="lp">(</math-o><math-subsup><math-base><math-i class="">x</math-i></math-base><math-sub><math-n>0</math-n></math-sub><math-sup></math-sup></math-subsup><math-o class="del txt">,</math-o><math-subsup><math-base><math-i class="">y</math-i></math-base><math-sub><math-n>0</math-n></math-sub><math-sup></math-sup></math-subsup><math-o class="rp">)</math-o></math-parencont><math-right><math-o class="rp">)</math-o></math-right></math-paren><math-o class="bin">+</math-o><math-i class="">o</math-i><math-o class="lp">(</math-o><math-subsup><math-base><math-i class="">ρ</math-i></math-base><math-sub></math-sub><math-sup><math-n>2</math-n></math-sup></math-subsup><math-o class="rp">)</math-o></math-root></span>
         と記述できる。 
-        ここで、 <math-root><math-i>ρ</math-i><math-o class="rel">:=</math-o><math-sqrt class="md-sqrt"><math-surd><math-o>√</math-o></math-surd><math-sqrtcont><math-subsup><math-base><math-i>h</math-i></math-base><math-sub></math-sub><math-sup><math-n>2</math-n></math-sup></math-subsup><math-o class="bin">+</math-o><math-subsup><math-base><math-i>k</math-i></math-base><math-sub></math-sub><math-sup><math-n>2</math-n></math-sup></math-subsup></math-sqrtcont></math-sqrt></math-root> とした。 
+        ここで、 <math-root><math-i class="">ρ</math-i><math-o class="rel">:=</math-o><math-sqrt class="mod"><math-surd><math-o>√</math-o></math-surd><math-sqrtcont><math-subsup><math-base><math-i class="">h</math-i></math-base><math-sub></math-sub><math-sup><math-n>2</math-n></math-sup></math-subsup><math-o class="bin">+</math-o><math-subsup><math-base><math-i class="">k</math-i></math-base><math-sub></math-sub><math-sup><math-n>2</math-n></math-sup></math-subsup></math-sqrtcont></math-sqrt></math-root> とした。 
       </p>
       <p class="normal">
-        Cauchy の積分公式により、 正則関数 <math-root><math-i>F</math-i><math-o class="lp">(</math-o><math-i>z</math-i><math-o class="rp">)</math-o></math-root> の値は、 ある単純閉曲線 <math-root><math-i>C</math-i></math-root> の内側の点 <math-root><math-i>z</math-i></math-root> に対し、  
-        <span class="display-math"><math-root><math-i>F</math-i><math-o class="lp">(</math-o><math-i>z</math-i><math-o class="rp">)</math-o><math-o class="rel">=</math-o><math-frac><math-num><math-n>1</math-n></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n><math-i>π</math-i><math-i>i</math-i></math-den></math-denwrap></math-frac><math-subsup class="int"><math-base><math-o class="int">󰅄</math-o></math-base><math-sub><math-i>C</math-i></math-sub><math-sup></math-sup></math-subsup><math-frac><math-num><math-i>F</math-i><math-o class="lp">(</math-o><math-i>ζ</math-i><math-o class="rp">)</math-o></math-num><math-denwrap><math-line></math-line><math-den><math-i>ζ</math-i><math-o class="bin">−</math-o><math-i>z</math-i></math-den></math-denwrap></math-frac><math-i>d</math-i><math-i>ζ</math-i></math-root></span>
+        Cauchy の積分公式により、 正則関数 <math-root><math-i class="">F</math-i><math-o class="lp">(</math-o><math-i class="">z</math-i><math-o class="rp">)</math-o></math-root> の値は、 ある単純閉曲線 <math-root><math-i class="">C</math-i></math-root> の内側の点 <math-root><math-i class="">z</math-i></math-root> に対し、  
+        <span class="display-math"><math-root><math-i class="">F</math-i><math-o class="lp">(</math-o><math-i class="">z</math-i><math-o class="rp">)</math-o><math-o class="rel">=</math-o><math-frac><math-num><math-n>1</math-n></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n><math-i class="">π</math-i><math-i class="">i</math-i></math-den></math-denwrap></math-frac><math-subsup class="int"><math-base><math-o class="int">󰅄</math-o></math-base><math-sub><math-i class="">C</math-i></math-sub><math-sup></math-sup></math-subsup><math-frac><math-num><math-i class="">F</math-i><math-o class="lp">(</math-o><math-i class="">ζ</math-i><math-o class="rp">)</math-o></math-num><math-denwrap><math-line></math-line><math-den><math-i class="">ζ</math-i><math-o class="bin">−</math-o><math-i class="">z</math-i></math-den></math-denwrap></math-frac><math-i class="">d</math-i><math-i class="">ζ</math-i></math-root></span>
         で与えられる。 
-        これにより、 <math-root><math-i>F</math-i></math-root> の <math-root><math-i>n</math-i></math-root> 階導関数は、 
-        <span class="display-math"><math-root><math-subsup><math-base><math-i>F</math-i></math-base><math-sub></math-sub><math-sup><math-o class="lp">(</math-o><math-i>n</math-i><math-o class="rp">)</math-o></math-sup></math-subsup><math-o class="lp">(</math-o><math-i>z</math-i><math-o class="rp">)</math-o><math-o class="rel">=</math-o><math-frac><math-num><math-i>n</math-i><math-o class="ord txt">!</math-o></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n><math-i>π</math-i><math-i>i</math-i></math-den></math-denwrap></math-frac><math-subsup class="int"><math-base><math-o class="int">󰅄</math-o></math-base><math-sub><math-i>C</math-i></math-sub><math-sup></math-sup></math-subsup><math-frac><math-num><math-i>F</math-i><math-o class="lp">(</math-o><math-i>ζ</math-i><math-o class="rp">)</math-o></math-num><math-denwrap><math-line></math-line><math-den><math-subsup><math-base><math-o class="lp">(</math-o><math-i>ζ</math-i><math-o class="bin">−</math-o><math-i>z</math-i><math-o class="rp">)</math-o></math-base><math-sub></math-sub><math-sup><math-i>n</math-i><math-o class="bin">−</math-o><math-n>1</math-n></math-sup></math-subsup></math-den></math-denwrap></math-frac><math-i>d</math-i><math-i>ζ</math-i></math-root></span>
+        これにより、 <math-root><math-i class="">F</math-i></math-root> の <math-root><math-i class="">n</math-i></math-root> 階導関数は、 
+        <span class="display-math"><math-root><math-subsup><math-base><math-i class="">F</math-i></math-base><math-sub></math-sub><math-sup><math-o class="lp">(</math-o><math-i class="">n</math-i><math-o class="rp">)</math-o></math-sup></math-subsup><math-o class="lp">(</math-o><math-i class="">z</math-i><math-o class="rp">)</math-o><math-o class="rel">=</math-o><math-frac><math-num><math-i class="">n</math-i><math-o class="ord txt">!</math-o></math-num><math-denwrap><math-line></math-line><math-den><math-n>2</math-n><math-i class="">π</math-i><math-i class="">i</math-i></math-den></math-denwrap></math-frac><math-subsup class="int"><math-base><math-o class="int">󰅄</math-o></math-base><math-sub><math-i class="">C</math-i></math-sub><math-sup></math-sup></math-subsup><math-frac><math-num><math-i class="">F</math-i><math-o class="lp">(</math-o><math-i class="">ζ</math-i><math-o class="rp">)</math-o></math-num><math-denwrap><math-line></math-line><math-den><math-subsup><math-base><math-o class="lp">(</math-o><math-i class="">ζ</math-i><math-o class="bin">−</math-o><math-i class="">z</math-i><math-o class="rp">)</math-o></math-base><math-sub></math-sub><math-sup><math-i class="">n</math-i><math-o class="bin">−</math-o><math-n>1</math-n></math-sup></math-subsup></math-den></math-denwrap></math-frac><math-i class="">d</math-i><math-i class="">ζ</math-i></math-root></span>
         と書けることが分かる。 
       </p>
     </article>
