@@ -63,10 +63,35 @@ article p math-root span.box {
   height: 1em;
   display: inline-block;
   vertical-align: middle; 
-  background-color: hsl(240, 80%, 80%);
+  background: linear-gradient(-45deg, hsl(240, 80%, 50%) 25%, white 25%, white 50%, hsl(240, 80%, 50%) 50%, hsl(240, 80%, 50%) 75%, white 75%, white);
+  background-size: 4px 4px;
 }
 
 article p math-root span.box::before {
   line-height: 1;
-  content: "?";
+  content: "";
+}
+
+.red {
+  color: hsl(0, 100%, 40%);
+}
+
+.yellow {
+  color: hsl(60, 100%, 40%);
+}
+
+.green {
+  color: hsl(120, 100%, 40%);
+}
+
+.frame {
+  padding: 0.2em;
+  border: 3px double;
+}
+
+.fill {
+  padding: 0.2em;
+  color: white;
+  background: linear-gradient(-45deg, hsl(60, 80%, 30%) 25%, black 25%, black 50%, hsl(60, 80%, 30%) 50%, hsl(60, 80%, 30%) 75%, black 75%, black);
+  background-size: 6px 6px;
 }
